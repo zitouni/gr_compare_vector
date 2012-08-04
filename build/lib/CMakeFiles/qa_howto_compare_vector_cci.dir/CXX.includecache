@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zitouni/git/workspace/gr-compare-vector/lib/qa_howto_compare_vector_cci.cc
+boost/test/unit_test.hpp
+-
+

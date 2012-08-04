@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<block>
+  <name>Comparator</name>
+  <key>howto_compare_vector_cci</key>
+  <category>HOWTO</category>
+  <import>import howto</import>
+  <make>howto.compare_vector_cci()</make>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  
+   <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>int</type>
+  </source>
+</block>

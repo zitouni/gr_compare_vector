@@ -1,0 +1,10 @@
+/home/zitouni/git/workspace/gr-compare-vector/build/swig/CMakeFiles/_howto_swig.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/swig/CMakeFiles/_howto_swig_doc_tag.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/swig/CMakeFiles/_howto_swig_swig_tag.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/lib/CMakeFiles/gnuradio-howto.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/apps/CMakeFiles/pygen_apps_03cee.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/python/CMakeFiles/pygen_python_01d2b.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/swig/CMakeFiles/pygen_swig_5c37f.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/lib/CMakeFiles/qa_howto_compare_vector_cci.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/lib/CMakeFiles/qa_howto_square2_ff.dir
+/home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles/uninstall.dir
