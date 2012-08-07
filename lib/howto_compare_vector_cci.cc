@@ -51,8 +51,8 @@ howto_make_compare_vector_cci ()
  * are connected to this block.  In this case, we accept
  * only 1 input and 1 output.
  */
-static const int MIN_IN = 1;	// mininum number of input streams
-static const int MAX_IN = 1;	// maximum number of input streams
+static const int MIN_IN = 2;	// mininum number of input streams
+static const int MAX_IN = 2;	// maximum number of input streams
 static const int MIN_OUT = 1;	// minimum number of output streams
 static const int MAX_OUT = 1;	// maximum number of output streams
 
@@ -61,8 +61,8 @@ static const int MAX_OUT = 1;	// maximum number of output streams
  */
 howto_compare_vector_cci::howto_compare_vector_cci ()
   : gr_block ("compare_vector_cci",
-	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (float)),
-	      gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (float)))
+	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (unsigned char)),
+	      gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (int)))
 {
   // nothing else required in this example
 }
@@ -81,10 +81,11 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			       gr_vector_const_void_star &input_items,
 			       gr_vector_void_star &output_items)
 {
-  const float *in = (const float *) input_items[0];
-  float *out = (float *) output_items[0];
+  unsigned char *in = (unsigned char *) input_items[0];
+  int *out = (int *) output_items[0];
 
   for (int i = 0; i < noutput_items; i++){
+
     out[i] = in[i] * in[i];
   }
 
