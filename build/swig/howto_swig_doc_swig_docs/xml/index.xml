@@ -93,6 +93,7 @@
   <compound refid="classstd_1_1fstream" kind="class"><name>std::fstream</name>
   </compound>
   <compound refid="classhowto__compare__vector__cci" kind="class"><name>howto_compare_vector_cci</name>
+    <member refid="classhowto__compare__vector__cci_1a1c3f37ec74b53ef22e36a761d90f4cc4" kind="variable"><name>d_shift_reg</name></member>
     <member refid="classhowto__compare__vector__cci_1a53a3ff2c91801ad560193ff8ee7e7e00" kind="friend"><name>howto_make_compare_vector_cci</name></member>
     <member refid="classhowto__compare__vector__cci_1a853301aa025b20b63ac43b5e02094556" kind="function"><name>howto_compare_vector_cci</name></member>
     <member refid="classhowto__compare__vector__cci_1ab32ebee21b7f153b2117f6cbad90b1b8" kind="function"><name>~howto_compare_vector_cci</name></member>
@@ -257,6 +258,6 @@
     <member refid="howto__square2__ff_8h_1a950d80b5e8cf51085a2edc16295da5fd" kind="typedef"><name>howto_square2_ff_sptr</name></member>
     <member refid="howto__square2__ff_8h_1a416c317eec9d35ca8a188f4f3e9e91c3" kind="function"><name>howto_make_square2_ff</name></member>
   </compound>
-  <compound refid="dir_0fe6026315fe358935a9413e753b6f7e" kind="dir"><name>/home/zitouni/git/workspace/gr-compare-vector/include/</name>
+  <compound refid="dir_b46e668a8d73190e28c49c0c5dfafb7b" kind="dir"><name>/home/zitouni/git/workspace/gr_compare_vector/include/</name>
   </compound>
 </doxygenindex>

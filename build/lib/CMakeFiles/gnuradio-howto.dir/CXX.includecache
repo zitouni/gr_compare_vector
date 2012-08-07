@@ -16,24 +16,12 @@ howto_api.h
 gr_block.h
 -
 
-../include/howto_square2_ff.h
-howto_api.h
--
-gr_sync_block.h
--
-
-/home/zitouni/git/workspace/gr-compare-vector/lib/howto_compare_vector_cci.cc
+/home/zitouni/git/workspace/gr_compare_vector/lib/howto_compare_vector_cci.cc
 config.h
-/home/zitouni/git/workspace/gr-compare-vector/lib/config.h
+/home/zitouni/git/workspace/gr_compare_vector/lib/config.h
+stdio.h
+-
 howto_compare_vector_cci.h
--
-gr_io_signature.h
--
-
-/home/zitouni/git/workspace/gr-compare-vector/lib/howto_square2_ff.cc
-config.h
-/home/zitouni/git/workspace/gr-compare-vector/lib/config.h
-howto_square2_ff.h
 -
 gr_io_signature.h
 -
@@ -94,12 +82,6 @@ gr_types.h
 gr_core_api.h
 -
 boost/shared_ptr.hpp
--
-
-/usr/local/include/gnuradio/gr_sync_block.h
-gr_core_api.h
--
-gr_block.h
 -
 
 /usr/local/include/gnuradio/gr_tags.h

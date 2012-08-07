@@ -12,7 +12,7 @@
   </sink>
   
    <sink>
-    <name>in</name>
+    <name>ref</name>
     <type>byte</type>
   </sink>
 

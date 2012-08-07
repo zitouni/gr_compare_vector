@@ -42,7 +42,7 @@ if _RTLD_GLOBAL != 0:
 
 
 # import swig generated symbols into the howto namespace
-from evaluate_swig import *
+from howto_swig import *
 
 # import any pure python here
 #

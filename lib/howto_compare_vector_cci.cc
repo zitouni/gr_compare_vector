@@ -29,6 +29,8 @@
 #include "config.h"
 #endif
 
+#include <stdio.h>
+
 #include <howto_compare_vector_cci.h>
 #include <gr_io_signature.h>
 
@@ -81,14 +83,29 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			       gr_vector_const_void_star &input_items,
 			       gr_vector_void_star &output_items)
 {
-  unsigned char *in = (unsigned char *) input_items[0];
+  //unsigned char *in_stream = (unsigned char *) input_items[0];
+  //unsigned char *ref_stream = (unsigned char *) input_items[1];
+
   int *out = (int *) output_items[0];
 
+
+  printf("number of noutput_items %d \n", noutput_items);
+
   for (int i = 0; i < noutput_items; i++){
+	  unsigned char in = ((unsigned char *) input_items[0])[i];
+	  unsigned char ref = ((unsigned char *) input_items[0])[i];
 
-    out[i] = in[i] * in[i];
+	  printf("Value of in_stream %d \n", ((unsigned char *) input_items[0])[i]);
+	  printf("Value of ref_stream %d \n", ((unsigned char *) input_items[1])[i]);
+
+	  if (in == ref)
+		  d_shift_reg = (d_shift_reg << 1) | 1;
+	  else
+		  d_shift_reg = d_shift_reg << 1;
+
+	  out[i] = d_shift_reg;
   }
-
+  printf("Value of the output %d \n",d_shift_reg);
   // Tell runtime system how many input items we consumed on
   // each input stream.
 

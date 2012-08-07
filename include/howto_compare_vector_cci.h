@@ -67,6 +67,7 @@ private:
    * \brief square a stream of floats.
    */
   howto_compare_vector_cci ();  	// private constructor
+  unsigned short       		d_shift_reg;
 
  public:
   ~howto_compare_vector_cci ();	// public destructor
