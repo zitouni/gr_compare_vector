@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr-compare-vector
+CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr_compare_vector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr-compare-vector/build
+CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr_compare_vector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -117,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles /home/zitouni/git/workspace/gr-compare-vector/build/lib/CMakeFiles/progress.marks
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles 0
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles /home/zitouni/git/workspace/gr_compare_vector/build/lib/CMakeFiles/progress.marks
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,22 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/gnuradio-howto.dir/rule:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-howto.dir/rule
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-howto.dir/rule
 .PHONY : lib/CMakeFiles/gnuradio-howto.dir/rule
 
 # Convenience name for target.
@@ -157,12 +157,12 @@ gnuradio-howto: lib/CMakeFiles/gnuradio-howto.dir/rule
 
 # fast build rule for target.
 gnuradio-howto/fast:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/build
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/build
 .PHONY : gnuradio-howto/fast
 
 # Convenience name for target.
 lib/CMakeFiles/qa_howto_compare_vector_cci.dir/rule:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/qa_howto_compare_vector_cci.dir/rule
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/qa_howto_compare_vector_cci.dir/rule
 .PHONY : lib/CMakeFiles/qa_howto_compare_vector_cci.dir/rule
 
 # Convenience name for target.
@@ -171,12 +171,12 @@ qa_howto_compare_vector_cci: lib/CMakeFiles/qa_howto_compare_vector_cci.dir/rule
 
 # fast build rule for target.
 qa_howto_compare_vector_cci/fast:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build
 .PHONY : qa_howto_compare_vector_cci/fast
 
 # Convenience name for target.
 lib/CMakeFiles/qa_howto_square2_ff.dir/rule:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/qa_howto_square2_ff.dir/rule
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/qa_howto_square2_ff.dir/rule
 .PHONY : lib/CMakeFiles/qa_howto_square2_ff.dir/rule
 
 # Convenience name for target.
@@ -185,7 +185,7 @@ qa_howto_square2_ff: lib/CMakeFiles/qa_howto_square2_ff.dir/rule
 
 # fast build rule for target.
 qa_howto_square2_ff/fast:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/build
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/build
 .PHONY : qa_howto_square2_ff/fast
 
 howto_compare_vector_cci.o: howto_compare_vector_cci.cc.o
@@ -193,7 +193,7 @@ howto_compare_vector_cci.o: howto_compare_vector_cci.cc.o
 
 # target to build an object file
 howto_compare_vector_cci.cc.o:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o
 .PHONY : howto_compare_vector_cci.cc.o
 
 howto_compare_vector_cci.i: howto_compare_vector_cci.cc.i
@@ -201,7 +201,7 @@ howto_compare_vector_cci.i: howto_compare_vector_cci.cc.i
 
 # target to preprocess a source file
 howto_compare_vector_cci.cc.i:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.i
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.i
 .PHONY : howto_compare_vector_cci.cc.i
 
 howto_compare_vector_cci.s: howto_compare_vector_cci.cc.s
@@ -209,7 +209,7 @@ howto_compare_vector_cci.s: howto_compare_vector_cci.cc.s
 
 # target to generate assembly for a file
 howto_compare_vector_cci.cc.s:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.s
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.s
 .PHONY : howto_compare_vector_cci.cc.s
 
 howto_square2_ff.o: howto_square2_ff.cc.o
@@ -217,7 +217,7 @@ howto_square2_ff.o: howto_square2_ff.cc.o
 
 # target to build an object file
 howto_square2_ff.cc.o:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o
 .PHONY : howto_square2_ff.cc.o
 
 howto_square2_ff.i: howto_square2_ff.cc.i
@@ -225,7 +225,7 @@ howto_square2_ff.i: howto_square2_ff.cc.i
 
 # target to preprocess a source file
 howto_square2_ff.cc.i:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.i
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.i
 .PHONY : howto_square2_ff.cc.i
 
 howto_square2_ff.s: howto_square2_ff.cc.s
@@ -233,7 +233,7 @@ howto_square2_ff.s: howto_square2_ff.cc.s
 
 # target to generate assembly for a file
 howto_square2_ff.cc.s:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.s
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.s
 .PHONY : howto_square2_ff.cc.s
 
 qa_howto_compare_vector_cci.o: qa_howto_compare_vector_cci.cc.o
@@ -241,7 +241,7 @@ qa_howto_compare_vector_cci.o: qa_howto_compare_vector_cci.cc.o
 
 # target to build an object file
 qa_howto_compare_vector_cci.cc.o:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/qa_howto_compare_vector_cci.cc.o
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/qa_howto_compare_vector_cci.cc.o
 .PHONY : qa_howto_compare_vector_cci.cc.o
 
 qa_howto_compare_vector_cci.i: qa_howto_compare_vector_cci.cc.i
@@ -249,7 +249,7 @@ qa_howto_compare_vector_cci.i: qa_howto_compare_vector_cci.cc.i
 
 # target to preprocess a source file
 qa_howto_compare_vector_cci.cc.i:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/qa_howto_compare_vector_cci.cc.i
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/qa_howto_compare_vector_cci.cc.i
 .PHONY : qa_howto_compare_vector_cci.cc.i
 
 qa_howto_compare_vector_cci.s: qa_howto_compare_vector_cci.cc.s
@@ -257,7 +257,7 @@ qa_howto_compare_vector_cci.s: qa_howto_compare_vector_cci.cc.s
 
 # target to generate assembly for a file
 qa_howto_compare_vector_cci.cc.s:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/qa_howto_compare_vector_cci.cc.s
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/qa_howto_compare_vector_cci.cc.s
 .PHONY : qa_howto_compare_vector_cci.cc.s
 
 qa_howto_square2_ff.o: qa_howto_square2_ff.cc.o
@@ -265,7 +265,7 @@ qa_howto_square2_ff.o: qa_howto_square2_ff.cc.o
 
 # target to build an object file
 qa_howto_square2_ff.cc.o:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.o
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.o
 .PHONY : qa_howto_square2_ff.cc.o
 
 qa_howto_square2_ff.i: qa_howto_square2_ff.cc.i
@@ -273,7 +273,7 @@ qa_howto_square2_ff.i: qa_howto_square2_ff.cc.i
 
 # target to preprocess a source file
 qa_howto_square2_ff.cc.i:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.i
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.i
 .PHONY : qa_howto_square2_ff.cc.i
 
 qa_howto_square2_ff.s: qa_howto_square2_ff.cc.s
@@ -281,7 +281,7 @@ qa_howto_square2_ff.s: qa_howto_square2_ff.cc.s
 
 # target to generate assembly for a file
 qa_howto_square2_ff.cc.s:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.s
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.s
 .PHONY : qa_howto_square2_ff.cc.s
 
 # Help Target
@@ -323,6 +323,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

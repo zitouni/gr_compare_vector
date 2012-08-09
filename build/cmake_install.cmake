@@ -1,4 +1,4 @@
-# Install script for directory: /home/zitouni/git/workspace/gr-compare-vector
+# Install script for directory: /home/zitouni/git/workspace/gr_compare_vector
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,13 +34,13 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/zitouni/git/workspace/gr-compare-vector/build/include/cmake_install.cmake")
-  INCLUDE("/home/zitouni/git/workspace/gr-compare-vector/build/lib/cmake_install.cmake")
-  INCLUDE("/home/zitouni/git/workspace/gr-compare-vector/build/swig/cmake_install.cmake")
-  INCLUDE("/home/zitouni/git/workspace/gr-compare-vector/build/python/cmake_install.cmake")
-  INCLUDE("/home/zitouni/git/workspace/gr-compare-vector/build/grc/cmake_install.cmake")
-  INCLUDE("/home/zitouni/git/workspace/gr-compare-vector/build/apps/cmake_install.cmake")
-  INCLUDE("/home/zitouni/git/workspace/gr-compare-vector/build/docs/cmake_install.cmake")
+  INCLUDE("/home/zitouni/git/workspace/gr_compare_vector/build/include/cmake_install.cmake")
+  INCLUDE("/home/zitouni/git/workspace/gr_compare_vector/build/lib/cmake_install.cmake")
+  INCLUDE("/home/zitouni/git/workspace/gr_compare_vector/build/swig/cmake_install.cmake")
+  INCLUDE("/home/zitouni/git/workspace/gr_compare_vector/build/python/cmake_install.cmake")
+  INCLUDE("/home/zitouni/git/workspace/gr_compare_vector/build/grc/cmake_install.cmake")
+  INCLUDE("/home/zitouni/git/workspace/gr_compare_vector/build/apps/cmake_install.cmake")
+  INCLUDE("/home/zitouni/git/workspace/gr_compare_vector/build/docs/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -50,7 +50,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/zitouni/git/workspace/gr-compare-vector/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/zitouni/git/workspace/gr_compare_vector/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/zitouni/git/workspace/gr-compare-vector/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/zitouni/git/workspace/gr_compare_vector/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

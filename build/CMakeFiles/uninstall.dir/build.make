@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr-compare-vector
+CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr_compare_vector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr-compare-vector/build
+CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr_compare_vector/build
 
 # Utility rule file for uninstall.
 
@@ -43,7 +43,7 @@ CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr-compare-vector/build
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/zitouni/git/workspace/gr-compare-vector/build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/zitouni/git/workspace/gr_compare_vector/build/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -58,6 +58,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zitouni/git/workspace/gr-compare-vector /home/zitouni/git/workspace/gr-compare-vector /home/zitouni/git/workspace/gr-compare-vector/build /home/zitouni/git/workspace/gr-compare-vector/build /home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zitouni/git/workspace/gr_compare_vector /home/zitouni/git/workspace/gr_compare_vector /home/zitouni/git/workspace/gr_compare_vector/build /home/zitouni/git/workspace/gr_compare_vector/build /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

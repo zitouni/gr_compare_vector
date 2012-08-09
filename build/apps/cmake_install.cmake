@@ -1,4 +1,4 @@
-# Install script for directory: /home/zitouni/git/workspace/gr-compare-vector/apps
+# Install script for directory: /home/zitouni/git/workspace/gr_compare_vector/apps
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "howto_square.py" FILES "/home/zitouni/git/workspace/gr-compare-vector/build/apps/howto_square.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "howto_square.py" FILES "/home/zitouni/git/workspace/gr_compare_vector/build/apps/howto_square.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

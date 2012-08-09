@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr-compare-vector
+CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr_compare_vector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr-compare-vector/build
+CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr_compare_vector/build
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/gnuradio-howto.dir/depend.make
@@ -48,17 +48,17 @@ include lib/CMakeFiles/gnuradio-howto.dir/flags.make
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: lib/CMakeFiles/gnuradio-howto.dir/flags.make
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: ../lib/howto_compare_vector_cci.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o"
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o -c /home/zitouni/git/workspace/gr-compare-vector/lib/howto_compare_vector_cci.cc
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o -c /home/zitouni/git/workspace/gr_compare_vector/lib/howto_compare_vector_cci.cc
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.i"
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zitouni/git/workspace/gr-compare-vector/lib/howto_compare_vector_cci.cc > CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.i
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zitouni/git/workspace/gr_compare_vector/lib/howto_compare_vector_cci.cc > CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.i
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.s"
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zitouni/git/workspace/gr-compare-vector/lib/howto_compare_vector_cci.cc -o CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.s
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zitouni/git/workspace/gr_compare_vector/lib/howto_compare_vector_cci.cc -o CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.s
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o.requires:
 .PHONY : lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o.requires
@@ -71,17 +71,17 @@ lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o.provides.build: 
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o: lib/CMakeFiles/gnuradio-howto.dir/flags.make
 lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o: ../lib/howto_square2_ff.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o"
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o -c /home/zitouni/git/workspace/gr-compare-vector/lib/howto_square2_ff.cc
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o -c /home/zitouni/git/workspace/gr_compare_vector/lib/howto_square2_ff.cc
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.i"
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zitouni/git/workspace/gr-compare-vector/lib/howto_square2_ff.cc > CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.i
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zitouni/git/workspace/gr_compare_vector/lib/howto_square2_ff.cc > CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.i
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.s"
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zitouni/git/workspace/gr-compare-vector/lib/howto_square2_ff.cc -o CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.s
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zitouni/git/workspace/gr_compare_vector/lib/howto_square2_ff.cc -o CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.s
 
 lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o.requires:
 .PHONY : lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o.requires
@@ -107,7 +107,7 @@ lib/libgnuradio-howto.so: /usr/local/lib/libgnuradio-core.so
 lib/libgnuradio-howto.so: lib/CMakeFiles/gnuradio-howto.dir/build.make
 lib/libgnuradio-howto.so: lib/CMakeFiles/gnuradio-howto.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-howto.so"
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-howto.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-howto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/gnuradio-howto.dir/build: lib/libgnuradio-howto.so
@@ -118,10 +118,10 @@ lib/CMakeFiles/gnuradio-howto.dir/requires: lib/CMakeFiles/gnuradio-howto.dir/ho
 .PHONY : lib/CMakeFiles/gnuradio-howto.dir/requires
 
 lib/CMakeFiles/gnuradio-howto.dir/clean:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-howto.dir/cmake_clean.cmake
+	cd /home/zitouni/git/workspace/gr_compare_vector/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-howto.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/gnuradio-howto.dir/clean
 
 lib/CMakeFiles/gnuradio-howto.dir/depend:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zitouni/git/workspace/gr-compare-vector /home/zitouni/git/workspace/gr-compare-vector/lib /home/zitouni/git/workspace/gr-compare-vector/build /home/zitouni/git/workspace/gr-compare-vector/build/lib /home/zitouni/git/workspace/gr-compare-vector/build/lib/CMakeFiles/gnuradio-howto.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zitouni/git/workspace/gr_compare_vector /home/zitouni/git/workspace/gr_compare_vector/lib /home/zitouni/git/workspace/gr_compare_vector/build /home/zitouni/git/workspace/gr_compare_vector/build/lib /home/zitouni/git/workspace/gr_compare_vector/build/lib/CMakeFiles/gnuradio-howto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/gnuradio-howto.dir/depend
 

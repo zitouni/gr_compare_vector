@@ -5,7 +5,7 @@ swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.o
  ../include/howto_api.h
  ../include/howto_compare_vector_cci.h
  ../include/howto_square2_ff.h
- /home/zitouni/git/workspace/gr-compare-vector/build/swig/howto_swigPYTHON_wrap.cxx
+ /home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_swigPYTHON_wrap.cxx
  /usr/include/python2.7/Python.h
  /usr/include/python2.7/abstract.h
  /usr/include/python2.7/boolobject.h

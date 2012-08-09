@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr-compare-vector
+CMAKE_SOURCE_DIR = /home/zitouni/git/workspace/gr_compare_vector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr-compare-vector/build
+CMAKE_BINARY_DIR = /home/zitouni/git/workspace/gr_compare_vector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -117,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles /home/zitouni/git/workspace/gr-compare-vector/build/include/CMakeFiles/progress.marks
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr-compare-vector/build/CMakeFiles 0
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles /home/zitouni/git/workspace/gr_compare_vector/build/include/CMakeFiles/progress.marks
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/clean
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,17 +133,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -170,6 +170,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zitouni/git/workspace/gr-compare-vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

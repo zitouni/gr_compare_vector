@@ -3,22 +3,26 @@
   <compounddef id="howto__api_8h" kind="file">
     <compoundname>howto_api.h</compoundname>
     <includes local="no">gruel/attributes.h</includes>
-    <includedby refid="howto__compare__vector__cci_8h" local="no">/home/zitouni/git/workspace/gr-compare-vector/include/howto_compare_vector_cci.h</includedby>
-    <includedby refid="howto__square2__ff_8h" local="no">/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h</includedby>
+    <includedby refid="howto__compare__vector__cci_8h" local="no">/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h</includedby>
+    <includedby refid="howto__square2__ff_8h" local="no">/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>gruel/attributes.h</label>
       </node>
       <node id="0">
-        <label>/home/zitouni/git/workspace/gr-compare-vector/include/howto_api.h</label>
+        <label>/home/zitouni/git/workspace/gr_compare_vector/include/howto_api.h</label>
         <link refid="howto_api.h"/>
         <childnode refid="1" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="4">
+        <label>/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h</label>
+        <link refid="howto__square2__ff_8h"/>
+      </node>
       <node id="2">
-        <label>/home/zitouni/git/workspace/gr-compare-vector/include/howto_api.h</label>
+        <label>/home/zitouni/git/workspace/gr_compare_vector/include/howto_api.h</label>
         <link refid="howto_api.h"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -26,12 +30,8 @@
         </childnode>
       </node>
       <node id="3">
-        <label>/home/zitouni/git/workspace/gr-compare-vector/include/howto_compare_vector_cci.h</label>
+        <label>/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h</label>
         <link refid="howto__compare__vector__cci_8h"/>
-      </node>
-      <node id="4">
-        <label>/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h</label>
-        <link refid="howto__square2__ff_8h"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_api.h" line="30" bodyfile="/home/zitouni/git/workspace/gr-compare-vector/include/howto_api.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_api.h" line="30" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_api.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -86,6 +86,6 @@
 <codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_HOWTO_API_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_api.h"/>
+    <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_api.h"/>
   </compounddef>
 </doxygen>

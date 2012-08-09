@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zitouni/git/workspace/gr-compare-vector/lib/qa_howto_square2_ff.cc
+/home/zitouni/git/workspace/gr_compare_vector/lib/qa_howto_square2_ff.cc
 boost/test/unit_test.hpp
 -
 

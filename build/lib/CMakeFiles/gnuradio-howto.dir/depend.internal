@@ -4,7 +4,7 @@
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o
  ../include/howto_api.h
  ../include/howto_compare_vector_cci.h
- /home/zitouni/git/workspace/gr-compare-vector/lib/howto_compare_vector_cci.cc
+ /home/zitouni/git/workspace/gr_compare_vector/lib/howto_compare_vector_cci.cc
  /usr/local/include/gnuradio/gr_basic_block.h
  /usr/local/include/gnuradio/gr_block.h
  /usr/local/include/gnuradio/gr_complex.h
@@ -23,7 +23,7 @@ lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o
 lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o
  ../include/howto_api.h
  ../include/howto_square2_ff.h
- /home/zitouni/git/workspace/gr-compare-vector/lib/howto_square2_ff.cc
+ /home/zitouni/git/workspace/gr_compare_vector/lib/howto_square2_ff.cc
  /usr/local/include/gnuradio/gr_basic_block.h
  /usr/local/include/gnuradio/gr_block.h
  /usr/local/include/gnuradio/gr_complex.h

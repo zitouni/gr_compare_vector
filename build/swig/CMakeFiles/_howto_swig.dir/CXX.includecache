@@ -22,7 +22,7 @@ howto_api.h
 gr_sync_block.h
 -
 
-/home/zitouni/git/workspace/gr-compare-vector/build/swig/howto_swigPYTHON_wrap.cxx
+/home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_swigPYTHON_wrap.cxx
 Python.h
 -
 string.h
@@ -30,7 +30,7 @@ string.h
 stdexcept
 -
 gnuradio_swig_bug_workaround.h
-/home/zitouni/git/workspace/gr-compare-vector/build/swig/gnuradio_swig_bug_workaround.h
+/home/zitouni/git/workspace/gr_compare_vector/build/swig/gnuradio_swig_bug_workaround.h
 gr_types.h
 -
 stddef.h
@@ -74,9 +74,9 @@ functional
 iterator
 -
 howto_compare_vector_cci.h
-/home/zitouni/git/workspace/gr-compare-vector/build/swig/howto_compare_vector_cci.h
+/home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_compare_vector_cci.h
 howto_square2_ff.h
-/home/zitouni/git/workspace/gr-compare-vector/build/swig/howto_square2_ff.h
+/home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_square2_ff.h
 limits.h
 -
 

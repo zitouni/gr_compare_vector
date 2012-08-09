@@ -16,8 +16,4 @@
     <type>byte</type>
   </sink>
 
-  <source>
-    <name>out</name>
-    <type>int</type>
-  </source>
 </block>

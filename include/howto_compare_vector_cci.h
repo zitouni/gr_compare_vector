@@ -47,7 +47,7 @@ typedef boost::shared_ptr<howto_compare_vector_cci> howto_compare_vector_cci_spt
  * constructor is private.  howto_make_compare_vector_cci is the public
  * interface for creating new instances.
  */
-HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci ();
+HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data, bool repeat);
 
 /*!
  * \brief square a stream of floats.
@@ -57,6 +57,12 @@ HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci ();
  */
 class HOWTO_API howto_compare_vector_cci : public gr_block
 {
+
+std::vector<unsigned char>	d_data;
+bool			d_repeat;
+bool is_same_vector(unsigned short d_shift_reg);
+unsigned int min_threshold_error;
+
 private:
   // The friend declaration allows howto_make_compare_vector_cci to
   // access the private constructor.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/zitouni/git/workspace/gr-compare-vector/python
+# Install script for directory: /home/zitouni/git/workspace/gr_compare_vector/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,13 +33,13 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES "/home/zitouni/git/workspace/gr-compare-vector/python/__init__.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES "/home/zitouni/git/workspace/gr_compare_vector/python/__init__.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES
-    "/home/zitouni/git/workspace/gr-compare-vector/build/python/__init__.pyc"
-    "/home/zitouni/git/workspace/gr-compare-vector/build/python/__init__.pyo"
+    "/home/zitouni/git/workspace/gr_compare_vector/build/python/__init__.pyc"
+    "/home/zitouni/git/workspace/gr_compare_vector/build/python/__init__.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

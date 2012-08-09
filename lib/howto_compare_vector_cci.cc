@@ -30,6 +30,7 @@
 #endif
 
 #include <stdio.h>
+#include <gr_count_bits.h>
 
 #include <howto_compare_vector_cci.h>
 #include <gr_io_signature.h>
@@ -53,18 +54,20 @@ howto_make_compare_vector_cci ()
  * are connected to this block.  In this case, we accept
  * only 1 input and 1 output.
  */
-static const int MIN_IN = 2;	// mininum number of input streams
-static const int MAX_IN = 2;	// maximum number of input streams
+static const int MIN_IN = 1;	// mininum number of input streams
+static const int MAX_IN = 1;	// maximum number of input streams
 static const int MIN_OUT = 1;	// minimum number of output streams
 static const int MAX_OUT = 1;	// maximum number of output streams
 
 /*
  * The private constructor
  */
-howto_compare_vector_cci::howto_compare_vector_cci ()
+howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned char> &data, bool repeat)
   : gr_block ("compare_vector_cci",
 	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (unsigned char)),
-	      gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (int)))
+	      gr_make_io_signature (MIN_OUT, MAX_OUT, 0)),
+	      d_data (data),
+	      d_repeat (repeat)
 {
   // nothing else required in this example
 }
@@ -86,31 +89,46 @@ howto_compare_vector_cci::general_work (int noutput_items,
   //unsigned char *in_stream = (unsigned char *) input_items[0];
   //unsigned char *ref_stream = (unsigned char *) input_items[1];
 
-  int *out = (int *) output_items[0];
+  //int *out = (int *) output_items[0];
+  d_shift_reg = 0;
 
 
   printf("number of noutput_items %d \n", noutput_items);
 
   for (int i = 0; i < noutput_items; i++){
 	  unsigned char in = ((unsigned char *) input_items[0])[i];
-	  unsigned char ref = ((unsigned char *) input_items[0])[i];
 
-	  printf("Value of in_stream %d \n", ((unsigned char *) input_items[0])[i]);
-	  printf("Value of ref_stream %d \n", ((unsigned char *) input_items[1])[i]);
+	  printf("Value of in_stream %d \n", in[i]);
 
 	  if (in == ref)
 		  d_shift_reg = (d_shift_reg << 1) | 1;
 	  else
 		  d_shift_reg = d_shift_reg << 1;
 
-	  out[i] = d_shift_reg;
+	  out[i] = in[i];
   }
   printf("Value of the output %d \n",d_shift_reg);
   // Tell runtime system how many input items we consumed on
   // each input stream.
 
-  consume_each (noutput_items);
+  //consume_each (noutput_items);
 
   // Tell runtime system how many output items we produced.
+
+  is_same_vector(d_shift_reg);
   return noutput_items;
 }
+
+bool is_same_vector(unsigned short d_shift_reg){
+
+	unsigned int threshold = gr_count_bits16((chips&0xFFFF) ^ (d_shift_reg&0xFFFF));
+
+	bool result_compare;
+	if (threshold < min_threshold_error)
+		result_compare = true;
+	else
+		result_compare = false;
+
+	return result_compare;
+}
+

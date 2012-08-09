@@ -1,4 +1,4 @@
-# Install script for directory: /home/zitouni/git/workspace/gr-compare-vector/docs
+# Install script for directory: /home/zitouni/git/workspace/gr_compare_vector/docs
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

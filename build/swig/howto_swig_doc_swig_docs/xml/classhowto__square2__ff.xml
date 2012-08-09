@@ -15,7 +15,7 @@
 <para>To avoid accidental use of raw pointers, <ref refid="classhowto__square2__ff" kindref="compound">howto_square2_ff</ref>&apos;s constructor is private. howto_make_square2_ff is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" line="64"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" line="64"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" line="66"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" line="66"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" line="69"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" line="69"/>
       </memberdef>
       <memberdef kind="function" id="classhowto__square2__ff_1a29e6a178f3b2bc4221db3efcae959e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -70,14 +70,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" line="75"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" line="75"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>square2 a stream of floats.</para><para>This uses the preferred technique: subclassing gr_sync_block. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" line="59" bodyfile="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" bodystart="58" bodyend="76"/>
+    <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" line="59" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" bodystart="58" bodyend="76"/>
     <listofallmembers>
       <member refid="classhowto__square2__ff_1a416c317eec9d35ca8a188f4f3e9e91c3" prot="private" virt="non-virtual"><scope>howto_square2_ff</scope><name>howto_make_square2_ff</name></member>
       <member refid="classhowto__square2__ff_1a6e92c82417fa37ab91f75257efc405cd" prot="private" virt="non-virtual"><scope>howto_square2_ff</scope><name>howto_square2_ff</name></member>

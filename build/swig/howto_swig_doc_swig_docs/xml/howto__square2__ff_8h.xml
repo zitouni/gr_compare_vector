@@ -11,18 +11,18 @@
       <node id="13">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="11">
-        <label>howto_api.h</label>
-        <link refid="howto__api_8h"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
       <node id="10">
-        <label>/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h</label>
+        <label>/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h</label>
         <link refid="howto_square2_ff.h"/>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>howto_api.h</label>
+        <link refid="howto__api_8h"/>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" line="41" bodyfile="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" bodystart="28" bodyend="-1"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" line="41" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -54,7 +54,7 @@
 <para>To avoid accidental use of raw pointers, <ref refid="classhowto__square2__ff" kindref="compound">howto_square2_ff</ref>&apos;s constructor is private. howto_make_square2_ff is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h" line="50"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h" line="50"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -128,6 +128,6 @@
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_HOWTO_SQUARE2_FF_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/zitouni/git/workspace/gr-compare-vector/include/howto_square2_ff.h"/>
+    <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h"/>
   </compounddef>
 </doxygen>
