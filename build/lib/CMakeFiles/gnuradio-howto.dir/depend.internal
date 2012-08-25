@@ -9,6 +9,7 @@ lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o
  /usr/local/include/gnuradio/gr_block.h
  /usr/local/include/gnuradio/gr_complex.h
  /usr/local/include/gnuradio/gr_core_api.h
+ /usr/local/include/gnuradio/gr_count_bits.h
  /usr/local/include/gnuradio/gr_io_signature.h
  /usr/local/include/gnuradio/gr_msg_accepter.h
  /usr/local/include/gnuradio/gr_runtime_types.h

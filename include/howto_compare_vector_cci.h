@@ -25,6 +25,9 @@
 #include <howto_api.h>
 #include <gr_block.h>
 
+class HOWTO_API howto_compare_vector_cci;
+typedef boost::shared_ptr<howto_compare_vector_cci> howto_compare_vector_cci_sptr;
+
 class howto_compare_vector_cci;
 
 /*
@@ -47,7 +50,7 @@ typedef boost::shared_ptr<howto_compare_vector_cci> howto_compare_vector_cci_spt
  * constructor is private.  howto_make_compare_vector_cci is the public
  * interface for creating new instances.
  */
-HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data, bool repeat);
+HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data,  unsigned short size, bool repeat);
 
 /*!
  * \brief square a stream of floats.
@@ -57,23 +60,25 @@ HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std
  */
 class HOWTO_API howto_compare_vector_cci : public gr_block
 {
-
 std::vector<unsigned char>	d_data;
+unsigned short  size;
 bool			d_repeat;
 bool is_same_vector(unsigned short d_shift_reg);
 unsigned int min_threshold_error;
 
-private:
+
   // The friend declaration allows howto_make_compare_vector_cci to
   // access the private constructor.
 
-  friend HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci ();
+  friend HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat);
 
+private:
   /*!
-   * \brief square a stream of floats.
+   * \constructor of my block.
    */
-  howto_compare_vector_cci ();  	// private constructor
+  howto_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat);  	// private constructor
   unsigned short       		d_shift_reg;
+  unsigned short			d_size;
 
  public:
   ~howto_compare_vector_cci ();	// public destructor

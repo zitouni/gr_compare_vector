@@ -8,6 +8,7 @@ lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/incl
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/include/gnuradio/gr_block.h
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/include/gnuradio/gr_complex.h
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/include/gnuradio/gr_core_api.h
+lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/include/gnuradio/gr_count_bits.h
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/include/gnuradio/gr_io_signature.h
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/include/gnuradio/gr_msg_accepter.h
 lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o: /usr/local/include/gnuradio/gr_runtime_types.h

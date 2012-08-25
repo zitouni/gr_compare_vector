@@ -21,6 +21,8 @@ config.h
 /home/zitouni/git/workspace/gr_compare_vector/lib/config.h
 stdio.h
 -
+gr_count_bits.h
+-
 howto_compare_vector_cci.h
 -
 gr_io_signature.h
@@ -56,6 +58,10 @@ complex
 
 /usr/local/include/gnuradio/gr_core_api.h
 gruel/attributes.h
+-
+
+/usr/local/include/gnuradio/gr_count_bits.h
+gr_core_api.h
 -
 
 /usr/local/include/gnuradio/gr_io_signature.h

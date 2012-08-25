@@ -40,9 +40,9 @@
  * a boost shared_ptr.  This is effectively the public constructor.
  */
 howto_compare_vector_cci_sptr
-howto_make_compare_vector_cci ()
+howto_make_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat)
 {
-  return gnuradio::get_initial_sptr(new howto_compare_vector_cci ());
+  return gnuradio::get_initial_sptr(new howto_compare_vector_cci(data, size, repeat));
 }
 
 /*
@@ -62,10 +62,11 @@ static const int MAX_OUT = 1;	// maximum number of output streams
 /*
  * The private constructor
  */
-howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned char> &data, bool repeat)
+howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat)
   : gr_block ("compare_vector_cci",
 	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (unsigned char)),
 	      gr_make_io_signature (MIN_OUT, MAX_OUT, 0)),
+	      d_size (size),
 	      d_data (data),
 	      d_repeat (repeat)
 {
@@ -86,24 +87,22 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			       gr_vector_const_void_star &input_items,
 			       gr_vector_void_star &output_items)
 {
-  //unsigned char *in_stream = (unsigned char *) input_items[0];
-  //unsigned char *ref_stream = (unsigned char *) input_items[1];
+  const unsigned char *in = (unsigned char *) input_items[0];
 
   //int *out = (int *) output_items[0];
   d_shift_reg = 0;
 
-
-  printf("number of noutput_items %d \n", noutput_items);
+ //printf("number of noutput_items %d \n", noutput_items);
 
   for (int i = 0; i < noutput_items; i++){
-	  unsigned char in = ((unsigned char *) input_items[0])[i];
-
 	  printf("Value of in_stream %d \n", in[i]);
 
-	  if (in == ref)
+	  if (in[i] == 1)
 		  d_shift_reg = (d_shift_reg << 1) | 1;
 	  else
 		  d_shift_reg = d_shift_reg << 1;
+
+	  if (d_size = )
 
 	  out[i] = in[i];
   }
@@ -112,8 +111,6 @@ howto_compare_vector_cci::general_work (int noutput_items,
   // each input stream.
 
   //consume_each (noutput_items);
-
-  // Tell runtime system how many output items we produced.
 
   is_same_vector(d_shift_reg);
   return noutput_items;
