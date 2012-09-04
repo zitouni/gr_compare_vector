@@ -173,6 +173,16 @@ class howto_compare_vector_cci_sptr(object):
 
     __swig_destroy__ = _howto_swig.delete_howto_compare_vector_cci_sptr
     __del__ = lambda self : None;
+    def is_same_vector(self, *args, **kwargs):
+        """
+        is_same_vector(self, int d_shift_reg, int d_vector_reg) -> bool
+
+        Params: (d_shift_reg, d_vector_reg)
+        """
+        return _howto_swig.howto_compare_vector_cci_sptr_is_same_vector(self, *args, **kwargs)
+
+    is_same_vector_value = _swig_property(_howto_swig.howto_compare_vector_cci_sptr_is_same_vector_value_get, _howto_swig.howto_compare_vector_cci_sptr_is_same_vector_value_set)
+    is_same_vector_number = _swig_property(_howto_swig.howto_compare_vector_cci_sptr_is_same_vector_number_get, _howto_swig.howto_compare_vector_cci_sptr_is_same_vector_number_set)
     def general_work(self, *args, **kwargs):
         """
         general_work(self, int noutput_items, gr_vector_int ninput_items, gr_vector_const_void_star input_items, 
@@ -248,9 +258,11 @@ howto_compare_vector_cci_sptr_swigregister(howto_compare_vector_cci_sptr)
 howto_compare_vector_cci_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
 
 
-def compare_vector_cci():
+def compare_vector_cci(*args, **kwargs):
   """
-    compare_vector_cci() -> howto_compare_vector_cci_sptr
+    compare_vector_cci(__dummy_0__ data, __dummy_0__ preamble, unsigned short iteration_data_reg, 
+        unsigned short min_threshold_error, 
+        bool repeat) -> howto_compare_vector_cci_sptr
 
     square a stream of floats.
 
@@ -258,9 +270,9 @@ def compare_vector_cci():
 
     To avoid accidental use of raw pointers, howto_compare_vector_cci's constructor is private. howto_make_compare_vector_cci is the public interface for creating new instances.
 
-    Params: (NONE)
+    Params: (data, preamble, iteration_data_reg, min_threshold_error, repeat)
     """
-  return _howto_swig.compare_vector_cci()
+  return _howto_swig.compare_vector_cci(*args, **kwargs)
 class howto_square2_ff_sptr(object):
     """Proxy of C++ boost::shared_ptr<(howto_square2_ff)> class"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')

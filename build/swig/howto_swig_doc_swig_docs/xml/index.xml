@@ -57,9 +57,9 @@
   </compound>
   <compound refid="classstd_1_1wstring_1_1const__iterator" kind="class"><name>std::wstring::const_iterator</name>
   </compound>
-  <compound refid="classstd_1_1deque_1_1const__iterator" kind="class"><name>std::deque::const_iterator</name>
-  </compound>
   <compound refid="classstd_1_1list_1_1const__iterator" kind="class"><name>std::list::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1const__iterator" kind="class"><name>std::deque::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
   </compound>
@@ -75,11 +75,11 @@
   </compound>
   <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1list_1_1const__reverse__iterator" kind="class"><name>std::list::const_reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1wstring_1_1const__reverse__iterator" kind="class"><name>std::wstring::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1const__reverse__iterator" kind="class"><name>std::deque::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1const__reverse__iterator" kind="class"><name>std::list::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque" kind="class"><name>std::deque</name>
     <member refid="classstd_1_1deque_1a090b92581de438d2e14bedc190f0b0f9" kind="variable"><name>elements</name></member>
@@ -93,10 +93,25 @@
   <compound refid="classstd_1_1fstream" kind="class"><name>std::fstream</name>
   </compound>
   <compound refid="classhowto__compare__vector__cci" kind="class"><name>howto_compare_vector_cci</name>
-    <member refid="classhowto__compare__vector__cci_1a1c3f37ec74b53ef22e36a761d90f4cc4" kind="variable"><name>d_shift_reg</name></member>
-    <member refid="classhowto__compare__vector__cci_1a53a3ff2c91801ad560193ff8ee7e7e00" kind="friend"><name>howto_make_compare_vector_cci</name></member>
-    <member refid="classhowto__compare__vector__cci_1a853301aa025b20b63ac43b5e02094556" kind="function"><name>howto_compare_vector_cci</name></member>
+    <member refid="classhowto__compare__vector__cci_1a22a6a6cf3694719aea983f0d185f0fd0" kind="variable"><name>d_data</name></member>
+    <member refid="classhowto__compare__vector__cci_1acfb3b9f2441c6464a0ebdd232bb5ffb7" kind="variable"><name>d_preamble</name></member>
+    <member refid="classhowto__compare__vector__cci_1af63db959413ccecd0785de3fabb96960" kind="variable"><name>d_iteration_data_reg</name></member>
+    <member refid="classhowto__compare__vector__cci_1aa4b588b25dd9cef61e88cad1e1987807" kind="variable"><name>d_min_threshold_error</name></member>
+    <member refid="classhowto__compare__vector__cci_1a8884f44480796b113c474a7faab3696e" kind="variable"><name>d_repeat</name></member>
+    <member refid="classhowto__compare__vector__cci_1a46a88e99141cc79092d45931bc61c02e" kind="variable"><name>d_shift_reg</name></member>
+    <member refid="classhowto__compare__vector__cci_1afeb455daef315c8ddb3372113425103d" kind="variable"><name>d_preamble_reg</name></member>
+    <member refid="classhowto__compare__vector__cci_1a94b7014984b7903bfd9d83b6aeaaa38b" kind="variable"><name>d_vector_reg</name></member>
+    <member refid="classhowto__compare__vector__cci_1a14063da841cb513f7a9a536939fd419a" kind="variable"><name>d_size</name></member>
+    <member refid="classhowto__compare__vector__cci_1a31d0c2eafb85cc9f3b75fb858bf937a7" kind="variable"><name>d_preamble_size</name></member>
+    <member refid="classhowto__compare__vector__cci_1afbad328860d580453d84fc5143621cf4" kind="variable"><name>number_bits</name></member>
+    <member refid="classhowto__compare__vector__cci_1ac6e28fb57c1c0607fe95b171577af5ca" kind="variable"><name>nbr_initial_bits_usrp</name></member>
+    <member refid="classhowto__compare__vector__cci_1a19e8ee9512800f57a34a59a183e815be" kind="variable"><name>preamble_received</name></member>
+    <member refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" kind="variable"><name>is_same_vector_value</name></member>
+    <member refid="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" kind="variable"><name>is_same_vector_number</name></member>
+    <member refid="classhowto__compare__vector__cci_1a20488f7b2ad31a36cc92e36b47a2a2a6" kind="friend"><name>howto_make_compare_vector_cci</name></member>
+    <member refid="classhowto__compare__vector__cci_1a011d79a88d6965343b64c2055dcb8eac" kind="function"><name>howto_compare_vector_cci</name></member>
     <member refid="classhowto__compare__vector__cci_1ab32ebee21b7f153b2117f6cbad90b1b8" kind="function"><name>~howto_compare_vector_cci</name></member>
+    <member refid="classhowto__compare__vector__cci_1abf69ef7d610406db881c088e83a18ea2" kind="function"><name>is_same_vector</name></member>
     <member refid="classhowto__compare__vector__cci_1a566f6c3f640c2be7db626c551607618d" kind="function"><name>general_work</name></member>
   </compound>
   <compound refid="classhowto__square2__ff" kind="class"><name>howto_square2_ff</name>
@@ -117,13 +132,11 @@
   </compound>
   <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
   </compound>
-  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
-  </compound>
   <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
@@ -131,11 +144,13 @@
   </compound>
   <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
   </compound>
+  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  </compound>
   <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
   </compound>
-  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
+  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
   </compound>
   <compound refid="classstd_1_1length__error" kind="class"><name>std::length_error</name>
   </compound>
@@ -173,19 +188,19 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
+  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
   </compound>
@@ -251,8 +266,9 @@
     <member refid="howto__api_8h_1a7a9fda890b8e28fac667cbd66796f13b" kind="define"><name>HOWTO_API</name></member>
   </compound>
   <compound refid="howto__compare__vector__cci_8h" kind="file"><name>howto_compare_vector_cci.h</name>
-    <member refid="howto__compare__vector__cci_8h_1a5368089db21c6f848f37a42cea98827a" kind="typedef"><name>howto_compare_vector_cci_sptr</name></member>
-    <member refid="howto__compare__vector__cci_8h_1a53a3ff2c91801ad560193ff8ee7e7e00" kind="function"><name>howto_make_compare_vector_cci</name></member>
+    <member refid="howto__compare__vector__cci_8h_1a66bbdbcd5202a7491bb8bb14337a6ed3" kind="typedef"><name>howto_compare_vector_cci_sptr</name></member>
+    <member refid="howto__compare__vector__cci_8h_1a3816408eb1eb8f9013b71927d16e39ba" kind="variable"><name>howto_compare_vector_cci</name></member>
+    <member refid="howto__compare__vector__cci_8h_1a20488f7b2ad31a36cc92e36b47a2a2a6" kind="function"><name>howto_make_compare_vector_cci</name></member>
   </compound>
   <compound refid="howto__square2__ff_8h" kind="file"><name>howto_square2_ff.h</name>
     <member refid="howto__square2__ff_8h_1a950d80b5e8cf51085a2edc16295da5fd" kind="typedef"><name>howto_square2_ff_sptr</name></member>

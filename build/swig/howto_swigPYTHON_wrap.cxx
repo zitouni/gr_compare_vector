@@ -4397,6 +4397,17 @@ SWIG_AsVal_int (PyObject * obj, int *val)
 }
 
 
+SWIGINTERN int
+SWIG_AsVal_bool (PyObject *obj, bool *val)
+{
+  int r = PyObject_IsTrue(obj);
+  if (r == -1)
+    return SWIG_ERROR;
+  if (val) *val = r ? true : false;
+  return SWIG_OK;
+}
+
+
 SWIGINTERNINLINE PyObject *
 SWIG_From_int  (int value)
 {    
@@ -4492,6 +4503,173 @@ SWIGINTERNINLINE PyObject *
 SWIG_From_std_string  (const std::string& s)
 {
   return SWIG_FromCharPtrAndSize(s.data(), s.size());
+}
+
+
+SWIGINTERN int
+SWIG_AsVal_unsigned_SS_char (PyObject * obj, unsigned char *val)
+{
+  unsigned long v;
+  int res = SWIG_AsVal_unsigned_SS_long (obj, &v);
+  if (SWIG_IsOK(res)) {
+    if ((v > UCHAR_MAX)) {
+      return SWIG_OverflowError;
+    } else {
+      if (val) *val = static_cast< unsigned char >(v);
+    }
+  }  
+  return res;
+}
+
+
+SWIGINTERNINLINE PyObject *
+SWIG_From_unsigned_SS_char  (unsigned char value)
+{    
+  return SWIG_From_unsigned_SS_long  (value);
+}
+
+
+namespace swig {
+  template <> struct traits<unsigned char > {
+    typedef value_category category;
+    static const char* type_name() { return"unsigned char"; }
+  };  
+  template <>  struct traits_asval<unsigned char > {   
+    typedef unsigned char value_type;
+    static int asval(PyObject *obj, value_type *val) { 
+      return SWIG_AsVal_unsigned_SS_char (obj, val);
+    }
+  };
+  template <>  struct traits_from<unsigned char > {
+    typedef unsigned char value_type;
+    static PyObject *from(const value_type& val) {
+      return SWIG_From_unsigned_SS_char  (val);
+    }
+  };
+}
+
+
+namespace swig {
+  template <class SwigPySeq, class Seq>
+  inline void
+  assign(const SwigPySeq& swigpyseq, Seq* seq) {
+    // seq->assign(swigpyseq.begin(), swigpyseq.end()); // not used as not always implemented
+    typedef typename SwigPySeq::value_type value_type;
+    typename SwigPySeq::const_iterator it = swigpyseq.begin();
+    for (;it != swigpyseq.end(); ++it) {
+      seq->insert(seq->end(),(value_type)(*it));
+    }
+  }
+
+  template <class Seq, class T = typename Seq::value_type >
+  struct traits_asptr_stdseq {
+    typedef Seq sequence;
+    typedef T value_type;
+
+    static int asptr(PyObject *obj, sequence **seq) {
+      if (obj == Py_None || SWIG_Python_GetSwigThis(obj)) {
+	sequence *p;
+	if (::SWIG_ConvertPtr(obj,(void**)&p,
+			      swig::type_info<sequence>(),0) == SWIG_OK) {
+	  if (seq) *seq = p;
+	  return SWIG_OLDOBJ;
+	}
+      } else if (PySequence_Check(obj)) {
+	try {
+	  SwigPySequence_Cont<value_type> swigpyseq(obj);
+	  if (seq) {
+	    sequence *pseq = new sequence();
+	    assign(swigpyseq, pseq);
+	    *seq = pseq;
+	    return SWIG_NEWOBJ;
+	  } else {
+	    return swigpyseq.check() ? SWIG_OK : SWIG_ERROR;
+	  }
+	} catch (std::exception& e) {
+	  if (seq) {
+	    if (!PyErr_Occurred()) {
+	      PyErr_SetString(PyExc_TypeError, e.what());
+	    }
+	  }
+	  return SWIG_ERROR;
+	}
+      }
+      return SWIG_ERROR;
+    }
+  };
+
+  template <class Seq, class T = typename Seq::value_type >
+  struct traits_from_stdseq {
+    typedef Seq sequence;
+    typedef T value_type;
+    typedef typename Seq::size_type size_type;
+    typedef typename sequence::const_iterator const_iterator;
+
+    static PyObject *from(const sequence& seq) {
+#ifdef SWIG_PYTHON_EXTRA_NATIVE_CONTAINERS
+      swig_type_info *desc = swig::type_info<sequence>();
+      if (desc && desc->clientdata) {
+	return SWIG_NewPointerObj(new sequence(seq), desc, SWIG_POINTER_OWN);
+      }
+#endif
+      size_type size = seq.size();
+      if (size <= (size_type)INT_MAX) {
+	PyObject *obj = PyTuple_New((int)size);
+	int i = 0;
+	for (const_iterator it = seq.begin();
+	     it != seq.end(); ++it, ++i) {
+	  PyTuple_SetItem(obj,i,swig::from<value_type>(*it));
+	}
+	return obj;
+      } else {
+	PyErr_SetString(PyExc_OverflowError,"sequence size not valid in python");
+	return NULL;
+      }
+    }
+  };
+}
+
+
+  namespace swig {
+    template <class T>
+    struct traits_asptr<std::vector<T> >  {
+      static int asptr(PyObject *obj, std::vector<T> **vec) {
+	return traits_asptr_stdseq<std::vector<T> >::asptr(obj, vec);
+      }
+    };
+    
+    template <class T>
+    struct traits_from<std::vector<T> > {
+      static PyObject *from(const std::vector<T>& vec) {
+	return traits_from_stdseq<std::vector<T> >::from(vec);
+      }
+    };
+  }
+
+
+      namespace swig {
+	template <>  struct traits<std::vector<unsigned char, std::allocator< unsigned char > > > {
+	  typedef pointer_category category;
+	  static const char* type_name() {
+	    return "std::vector<" "unsigned char" "," "std::allocator< unsigned char >" " >";
+	  }
+	};
+      }
+    
+
+SWIGINTERN int
+SWIG_AsVal_unsigned_SS_short (PyObject * obj, unsigned short *val)
+{
+  unsigned long v;
+  int res = SWIG_AsVal_unsigned_SS_long (obj, &v);
+  if (SWIG_IsOK(res)) {
+    if ((v > USHRT_MAX)) {
+      return SWIG_OverflowError;
+    } else {
+      if (val) *val = static_cast< unsigned short >(v);
+    }
+  }  
+  return res;
 }
 
 #ifdef __cplusplus
@@ -5574,6 +5752,208 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "d_shift_reg",(char *) "d_vector_reg", NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:howto_compare_vector_cci_sptr_is_same_vector",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_compare_vector_cci_sptr_is_same_vector" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "howto_compare_vector_cci_sptr_is_same_vector" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      result = (bool)(*arg1)->is_same_vector(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_value_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
+  bool arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  bool val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_value_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_value_set" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_value_set" "', argument " "2"" of type '" "bool""'");
+  } 
+  arg2 = static_cast< bool >(val2);
+  {
+    try {
+      if (arg1) (*arg1)->is_same_vector_value = arg2;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_value_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_value_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_value_get" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
+  {
+    try {
+      result = (bool) ((*arg1)->is_same_vector_value);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_number_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_number_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_number_set" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_number_set" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      if (arg1) (*arg1)->is_same_vector_number = arg2;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_number_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_number_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_number_get" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
+  {
+    try {
+      result = (int) ((*arg1)->is_same_vector_number);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_general_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
@@ -6221,13 +6601,72 @@ SWIGINTERN PyObject *howto_compare_vector_cci_sptr_swigregister(PyObject *SWIGUN
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_compare_vector_cci(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_compare_vector_cci(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
+  std::vector< unsigned char,std::allocator< unsigned char > > *arg1 = 0 ;
+  std::vector< unsigned char,std::allocator< unsigned char > > *arg2 = 0 ;
+  unsigned short arg3 ;
+  unsigned short arg4 ;
+  bool arg5 ;
+  int res1 = SWIG_OLDOBJ ;
+  int res2 = SWIG_OLDOBJ ;
+  unsigned short val3 ;
+  int ecode3 = 0 ;
+  unsigned short val4 ;
+  int ecode4 = 0 ;
+  bool val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  char *  kwnames[] = {
+    (char *) "data",(char *) "preamble",(char *) "iteration_data_reg",(char *) "min_threshold_error",(char *) "repeat", NULL 
+  };
   howto_compare_vector_cci_sptr result;
   
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOO:compare_vector_cci",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  {
+    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    res1 = swig::asptr(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "compare_vector_cci" "', argument " "1"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "compare_vector_cci" "', argument " "1"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  {
+    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "compare_vector_cci" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "compare_vector_cci" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  ecode3 = SWIG_AsVal_unsigned_SS_short(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "compare_vector_cci" "', argument " "3"" of type '" "unsigned short""'");
+  } 
+  arg3 = static_cast< unsigned short >(val3);
+  ecode4 = SWIG_AsVal_unsigned_SS_short(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "compare_vector_cci" "', argument " "4"" of type '" "unsigned short""'");
+  } 
+  arg4 = static_cast< unsigned short >(val4);
+  ecode5 = SWIG_AsVal_bool(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "compare_vector_cci" "', argument " "5"" of type '" "bool""'");
+  } 
+  arg5 = static_cast< bool >(val5);
   {
     try {
-      result = howto_make_compare_vector_cci();
+      result = howto_make_compare_vector_cci((std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg1,(std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg2,arg3,arg4,arg5);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -6238,8 +6677,12 @@ SWIGINTERN PyObject *_wrap_compare_vector_cci(PyObject *SWIGUNUSEDPARM(self), Py
     
   }
   resultobj = SWIG_NewPointerObj((new howto_compare_vector_cci_sptr(static_cast< const howto_compare_vector_cci_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, SWIG_POINTER_OWN |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return resultobj;
 fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return NULL;
 }
 
@@ -7084,6 +7527,16 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"howto_compare_vector_cci_sptr___deref__", _wrap_howto_compare_vector_cci_sptr___deref__, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr___deref__(howto_compare_vector_cci_sptr self)"},
 	 { (char *)"delete_howto_compare_vector_cci_sptr", _wrap_delete_howto_compare_vector_cci_sptr, METH_VARARGS, (char *)"delete_howto_compare_vector_cci_sptr(howto_compare_vector_cci_sptr self)"},
+	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector", (PyCFunction) _wrap_howto_compare_vector_cci_sptr_is_same_vector, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"howto_compare_vector_cci_sptr_is_same_vector(howto_compare_vector_cci_sptr self, int d_shift_reg, \n"
+		"    int d_vector_reg) -> bool\n"
+		"\n"
+		"Params: (d_shift_reg, d_vector_reg)\n"
+		""},
+	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_set", _wrap_howto_compare_vector_cci_sptr_is_same_vector_value_set, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_set(howto_compare_vector_cci_sptr self, bool is_same_vector_value)"},
+	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_get", _wrap_howto_compare_vector_cci_sptr_is_same_vector_value_get, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_get(howto_compare_vector_cci_sptr self) -> bool"},
+	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_set", _wrap_howto_compare_vector_cci_sptr_is_same_vector_number_set, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_set(howto_compare_vector_cci_sptr self, int is_same_vector_number)"},
+	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_get", _wrap_howto_compare_vector_cci_sptr_is_same_vector_number_get, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_get(howto_compare_vector_cci_sptr self) -> int"},
 	 { (char *)"howto_compare_vector_cci_sptr_general_work", (PyCFunction) _wrap_howto_compare_vector_cci_sptr_general_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
 		"howto_compare_vector_cci_sptr_general_work(howto_compare_vector_cci_sptr self, int noutput_items, \n"
 		"    gr_vector_int ninput_items, gr_vector_const_void_star input_items, \n"
@@ -7107,8 +7560,10 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"howto_compare_vector_cci_sptr_to_basic_block", _wrap_howto_compare_vector_cci_sptr_to_basic_block, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_to_basic_block(howto_compare_vector_cci_sptr self) -> gr_basic_block_sptr"},
 	 { (char *)"howto_compare_vector_cci_sptr_check_topology", (PyCFunction) _wrap_howto_compare_vector_cci_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"howto_compare_vector_cci_sptr_check_topology(howto_compare_vector_cci_sptr self, int ninputs, int noutputs) -> bool"},
 	 { (char *)"howto_compare_vector_cci_sptr_swigregister", howto_compare_vector_cci_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"compare_vector_cci", _wrap_compare_vector_cci, METH_VARARGS, (char *)"\n"
-		"compare_vector_cci() -> howto_compare_vector_cci_sptr\n"
+	 { (char *)"compare_vector_cci", (PyCFunction) _wrap_compare_vector_cci, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"compare_vector_cci(__dummy_0__ data, __dummy_0__ preamble, unsigned short iteration_data_reg, \n"
+		"    unsigned short min_threshold_error, \n"
+		"    bool repeat) -> howto_compare_vector_cci_sptr\n"
 		"\n"
 		"square a stream of floats.\n"
 		"\n"
@@ -7116,7 +7571,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"To avoid accidental use of raw pointers, howto_compare_vector_cci's constructor is private. howto_make_compare_vector_cci is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (NONE)\n"
+		"Params: (data, preamble, iteration_data_reg, min_threshold_error, repeat)\n"
 		""},
 	 { (char *)"new_howto_square2_ff_sptr", _wrap_new_howto_square2_ff_sptr, METH_VARARGS, (char *)"\n"
 		"howto_square2_ff_sptr()\n"

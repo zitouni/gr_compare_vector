@@ -4,16 +4,70 @@
   <key>howto_compare_vector_cci</key>
   <category>HOWTO</category>
   <import>import howto</import>
-  <make>howto.compare_vector_cci()</make>
+  <make>howto.compare_vector_cci($data, $preamble, $iteration_data_reg, $min_threshold_error, $repeat)</make>
+   <param>
+  		<name>Output Type</name>
+		<key>type</key>
+		<type>enum</type>
+		
+     <option>
+	   <name>Byte</name>
+	   <key>byte</key>
+	   <opt>fcn:s</opt>
+	   <opt>vec_type:int_vector</opt>
+     </option>  
+   </param>
+
+	<param>
+		<name>Data Vector</name>
+		<key>data</key>
+		<value> 1, 1, 0, 0 ,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1</value>
+		<type>$type.vec_type</type>
+	</param>
+	
+    <param>
+		<name>Preamble Vector</name>
+		<key>preamble</key>
+		<value> 0, 0, 0, 0 ,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0</value>
+		<type>$type.vec_type</type>
+	</param>
+	
+	<param>
+		<name>Iteration on Same Vector</name>
+		<key>iteration_data_reg</key>
+		<value>5</value>
+		<type>int</type>
+	</param>
+	
+	<param>
+		<name>Min Threshold Error</name>
+		<key>min_threshold_error</key>
+		<value>4</value>
+		<type>int</type>
+	</param>
+	
+	<param>
+		<name>Repeat</name>
+		<key>repeat</key>
+		<value>True</value>
+		<type>enum</type>
+		<option>
+			<name>Yes</name>
+			<key>True</key>
+		</option>
+		<option>
+			<name>No</name>
+			<key>False</key>
+		</option>
+	</param>
 
   <sink>
     <name>in</name>
     <type>byte</type>
   </sink>
-  
-   <sink>
-    <name>ref</name>
-    <type>byte</type>
-  </sink>
-
+ 
+  <source>
+	<name>out</name>
+	<type>byte</type>
+  </source> 
 </block>

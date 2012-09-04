@@ -14,13 +14,17 @@ Return a shared_ptr to a new instance of howto_compare_vector_cci.
 
 To avoid accidental use of raw pointers, howto_compare_vector_cci's constructor is private. howto_make_compare_vector_cci is the public interface for creating new instances."
 
-%feature("docstring") howto_compare_vector_cci::howto_compare_vector_cci "square a stream of floats.
+%feature("docstring") howto_compare_vector_cci::howto_compare_vector_cci "
 
-Params: (NONE)"
+Params: (data, preamble, iteration_data_reg, min_threshold_error, repeat)"
 
 %feature("docstring") howto_compare_vector_cci::~howto_compare_vector_cci "
 
 Params: (NONE)"
+
+%feature("docstring") howto_compare_vector_cci::is_same_vector "
+
+Params: (d_shift_reg, d_vector_reg)"
 
 %feature("docstring") howto_compare_vector_cci::general_work "
 
@@ -32,7 +36,7 @@ Return a shared_ptr to a new instance of howto_compare_vector_cci.
 
 To avoid accidental use of raw pointers, howto_compare_vector_cci's constructor is private. howto_make_compare_vector_cci is the public interface for creating new instances.
 
-Params: (NONE)"
+Params: (data, preamble, iteration_data_reg, min_threshold_error, repeat)"
 
 %feature("docstring") howto_square2_ff "square2 a stream of floats.
 
@@ -122,9 +126,9 @@ Params: (NONE)"
 
 %feature("docstring") std::wstring::const_iterator "STL iterator class."
 
-%feature("docstring") std::deque::const_iterator "STL iterator class."
-
 %feature("docstring") std::list::const_iterator "STL iterator class."
+
+%feature("docstring") std::deque::const_iterator "STL iterator class."
 
 %feature("docstring") std::map::const_reverse_iterator "STL iterator class."
 
@@ -140,11 +144,11 @@ Params: (NONE)"
 
 %feature("docstring") std::string::const_reverse_iterator "STL iterator class."
 
-%feature("docstring") std::list::const_reverse_iterator "STL iterator class."
-
 %feature("docstring") std::wstring::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::const_reverse_iterator "STL iterator class."
+
+%feature("docstring") std::list::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque "STL class."
 
@@ -168,13 +172,11 @@ Params: (NONE)"
 
 %feature("docstring") std::istringstream "STL class."
 
-%feature("docstring") std::map::iterator "STL iterator class."
-
 %feature("docstring") std::multimap::iterator "STL iterator class."
 
 %feature("docstring") std::set::iterator "STL iterator class."
 
-%feature("docstring") std::basic_string::iterator "STL iterator class."
+%feature("docstring") std::list::iterator "STL iterator class."
 
 %feature("docstring") std::multiset::iterator "STL iterator class."
 
@@ -182,11 +184,13 @@ Params: (NONE)"
 
 %feature("docstring") std::string::iterator "STL iterator class."
 
+%feature("docstring") std::basic_string::iterator "STL iterator class."
+
 %feature("docstring") std::wstring::iterator "STL iterator class."
 
 %feature("docstring") std::deque::iterator "STL iterator class."
 
-%feature("docstring") std::list::iterator "STL iterator class."
+%feature("docstring") std::map::iterator "STL iterator class."
 
 %feature("docstring") std::length_error "STL class."
 
@@ -216,19 +220,19 @@ Params: (NONE)"
 
 %feature("docstring") std::range_error "STL class."
 
-%feature("docstring") std::string::reverse_iterator "STL iterator class."
+%feature("docstring") std::vector::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::list::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::map::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::vector::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::set::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::multimap::reverse_iterator "STL iterator class."
 

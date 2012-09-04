@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_b46e668a8d73190e28c49c0c5dfafb7b" kind="dir">
+    <compoundname>/home/zitouni/git/workspace/gr_compare_vector/include/</compoundname>
+    <innerfile refid="howto__api_8h">howto_api.h</innerfile>
+    <innerfile refid="howto__compare__vector__cci_8h">howto_compare_vector_cci.h</innerfile>
+    <innerfile refid="howto__square2__ff_8h">howto_square2_ff.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zitouni/git/workspace/gr_compare_vector/include/"/>
+  </compounddef>
+</doxygen>

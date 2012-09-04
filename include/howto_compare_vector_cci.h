@@ -50,7 +50,7 @@ typedef boost::shared_ptr<howto_compare_vector_cci> howto_compare_vector_cci_spt
  * constructor is private.  howto_make_compare_vector_cci is the public
  * interface for creating new instances.
  */
-HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data,  unsigned short size, bool repeat);
+HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data, const std::vector<unsigned char> &preamble, unsigned short iteration_data_reg, unsigned short min_threshold_error, bool repeat);
 
 /*!
  * \brief square a stream of floats.
@@ -61,27 +61,40 @@ HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std
 class HOWTO_API howto_compare_vector_cci : public gr_block
 {
 std::vector<unsigned char>	d_data;
-unsigned short  size;
+std::vector<unsigned char>	d_preamble;
+unsigned short  d_iteration_data_reg;
+unsigned short 	d_min_threshold_error;
 bool			d_repeat;
-bool is_same_vector(unsigned short d_shift_reg);
-unsigned int min_threshold_error;
 
 
   // The friend declaration allows howto_make_compare_vector_cci to
   // access the private constructor.
 
-  friend HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat);
+  friend HOWTO_API howto_compare_vector_cci_sptr howto_make_compare_vector_cci (const std::vector<unsigned char> &data, const std::vector<unsigned char> &preamble, unsigned short iteration_data_reg, unsigned short min_threshold_error, bool repeat);
 
 private:
-  /*!
-   * \constructor of my block.
-   */
-  howto_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat);  	// private constructor
-  unsigned short       		d_shift_reg;
-  unsigned short			d_size;
+
+  howto_compare_vector_cci (const std::vector<unsigned char> &data, const std::vector<unsigned char> &preamble, unsigned short iteration_data_reg, unsigned short min_threshold_error, bool repeat);  	// private constructor
+  int 	    	   			d_shift_reg;
+  int 						d_preamble_reg;
+  int 						d_vector_reg;
+
+  int 						d_size;
+  int 						d_preamble_size;
+  int 						number_bits;
+  int 						nbr_initial_bits_usrp;
+
+  bool preamble_received;
+
 
  public:
   ~howto_compare_vector_cci ();	// public destructor
+
+
+  //function to return the boolean indicate that there are a sequence eqaul to the d_data in the block
+  bool is_same_vector(int d_shift_reg, int d_vector_reg);
+  bool is_same_vector_value;
+  int  is_same_vector_number;
 
   // Where all the action really happens
 

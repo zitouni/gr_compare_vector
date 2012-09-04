@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /*
- * Copyright 2004,2010 Free Software Foundation, Inc.
+ * Copyright 2004,2010 Free Software Foundation, Inc.f
  *
  * This file is part of GNU Radio
  *
@@ -31,6 +31,8 @@
 
 #include <stdio.h>
 #include <gr_count_bits.h>
+#include <cstdlib>
+
 
 #include <howto_compare_vector_cci.h>
 #include <gr_io_signature.h>
@@ -40,9 +42,9 @@
  * a boost shared_ptr.  This is effectively the public constructor.
  */
 howto_compare_vector_cci_sptr
-howto_make_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat)
+howto_make_compare_vector_cci (const std::vector<unsigned char> &data, const std::vector<unsigned char> &preamble,  unsigned short iteration_data_reg, unsigned short min_threshold_error, bool repeat)
 {
-  return gnuradio::get_initial_sptr(new howto_compare_vector_cci(data, size, repeat));
+  return gnuradio::get_initial_sptr(new howto_compare_vector_cci(data, preamble, iteration_data_reg, min_threshold_error, repeat));
 }
 
 /*
@@ -62,14 +64,44 @@ static const int MAX_OUT = 1;	// maximum number of output streams
 /*
  * The private constructor
  */
-howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned char> &data, unsigned short size, bool repeat)
+howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned char> &data, const std::vector<unsigned char> &preamble, unsigned short iteration_data_reg, unsigned short min_threshold_error,  bool repeat)
   : gr_block ("compare_vector_cci",
 	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (unsigned char)),
-	      gr_make_io_signature (MIN_OUT, MAX_OUT, 0)),
-	      d_size (size),
+	      gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (unsigned char))),
 	      d_data (data),
+	      d_preamble (preamble),
+	      d_iteration_data_reg (iteration_data_reg),
+	      d_min_threshold_error (min_threshold_error),
 	      d_repeat (repeat)
 {
+	d_shift_reg = 0;
+	d_vector_reg = 0;
+
+	is_same_vector_number = 0;
+	number_bits = 0;
+	d_preamble_reg = 0;
+
+	d_size = d_data.size();
+	d_preamble_size = d_preamble.size();
+
+
+	printf("the size of the data vector is : %d \n",  int(d_data.size()));
+	for (int offset=0; offset < d_data.size(); offset++ ){
+		  if (d_data[offset] == 1)
+			  d_vector_reg = (d_vector_reg << 1) | 1;
+		  else
+			  d_vector_reg = d_vector_reg << 1;
+	}
+
+	printf("the size of the preamble vector is : %d \n",  int(d_preamble.size()));
+	for (int offset=0; offset < d_preamble.size(); offset++ ){
+		  if (d_preamble[offset] == 1)
+			  d_preamble_reg = (d_preamble_reg << 1) | 1;
+		  else
+			  d_preamble_reg = d_preamble_reg << 1;
+	}
+
+   //printf("Value of d_data_reg is %d \n", d_data_reg);
   // nothing else required in this example
 }
 
@@ -88,44 +120,107 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			       gr_vector_void_star &output_items)
 {
   const unsigned char *in = (unsigned char *) input_items[0];
+  unsigned char *out = (unsigned char *) output_items[0];
 
-  //int *out = (int *) output_items[0];
-  d_shift_reg = 0;
-
- //printf("number of noutput_items %d \n", noutput_items);
-
+  int nbr_bits_usrp =0;
+  //printf("number of noutput_items %d \n", noutput_items);
   for (int i = 0; i < noutput_items; i++){
-	  printf("Value of in_stream %d \n", in[i]);
+	  //printf("Value of in_stream %d \n", in[i]);
 
-	  if (in[i] == 1)
-		  d_shift_reg = (d_shift_reg << 1) | 1;
-	  else
-		  d_shift_reg = d_shift_reg << 1;
+	  //The first test is used to avoid the 31 bits of mask
+	  //if(nbr_bits_usrp < 31){
+		  //nbr_bits_usrp++;
+		  //number_bits =0;
+	  //}else{
+	  	  number_bits ++;
+		  if(number_bits == (d_data.size() * d_iteration_data_reg)){
+			  is_same_vector_number =0 ;
+			  number_bits = 0;
+			  d_shift_reg = 0;
+		  }else{
+			  if (in[i] == 1)
+				  d_shift_reg = (d_shift_reg << 1) | 1;
+			  else
+				  d_shift_reg = d_shift_reg << 1;
 
-	  if (d_size = )
+			  //if((number_bits % d_preamble.size()) == 0){
+				  //preamble_received = is_same_vector(d_shift_reg, d_preamble_reg);
+				  //if (number_bits ==32)
+				  if((number_bits % d_preamble.size()) == 0){
+					  //compare shift_reg constructed to that of preamble reg
+					  preamble_received = is_same_vector(d_shift_reg, d_preamble_reg);
+					  if (preamble_received){
+						  //exit(1);
+					  	  d_shift_reg = 0;
+					  	  printf("Preamble is received *************** : %d******* valeur %d\n", number_bits, d_shift_reg);
+					  }
+				  }
 
+			  //}
+
+			  if (((number_bits % d_data.size()) == 0) && (preamble_received)){
+				  //printf("Number of bits  %d \n",number_bits);
+				  printf("***************\n");
+				  printf("d_shift_reg %d \n",d_shift_reg);
+				  printf("***************\n");
+
+				  if(preamble_received){
+					  if (is_same_vector(d_shift_reg, d_vector_reg)){
+						  //If the number of vector muched to the number of the vector iteration
+						  if (is_same_vector_number == (d_iteration_data_reg - 1))
+							  exit(1);
+						  //return noutput_items;
+					  }else{
+						  is_same_vector_number =0;
+						  //number_bits = 0;
+						  //d_shift_reg = 0;
+					  }
+				  //}
+				 }
+			  }
+	  	}
+	  //}
 	  out[i] = in[i];
   }
-  printf("Value of the output %d \n",d_shift_reg);
+  //printf("Value of the output %d \n",d_shift_reg);
+
+  //
   // Tell runtime system how many input items we consumed on
   // each input stream.
+  // This instruction allow the flow graph to be stable and to protect the stream across the block.
+  consume_each (noutput_items);
 
-  //consume_each (noutput_items);
 
-  is_same_vector(d_shift_reg);
   return noutput_items;
 }
 
-bool is_same_vector(unsigned short d_shift_reg){
 
-	unsigned int threshold = gr_count_bits16((chips&0xFFFF) ^ (d_shift_reg&0xFFFF));
+bool howto_compare_vector_cci::is_same_vector(int d_shift_reg, int d_vector_reg){
 
-	bool result_compare;
-	if (threshold < min_threshold_error)
-		result_compare = true;
-	else
-		result_compare = false;
+	int exclusive = (d_vector_reg &0xffffffff) ^ (d_shift_reg&0xffffffff);
 
-	return result_compare;
+    int count_error = 0;
+
+	for (int i = 0; i < d_size; i++)
+		if (exclusive & (1<<i)){
+			count_error++;
+		}
+	printf("********Begin is same vector function \n");
+	printf("valeur de count error is : %d \n", count_error);
+
+	if (count_error < d_min_threshold_error){
+		printf("*Yes, Value is equal \n");
+		is_same_vector_value = true;
+		is_same_vector_number ++;
+		printf("valeur de d_vector_reg: %d \n", d_vector_reg );
+		printf("valeur de d_shift_reg: %d \n", d_shift_reg );
+		printf("Number of vectors found  %d \n",is_same_vector_number);
+	}
+	else{
+		is_same_vector_value = false;
+	}
+	printf("********End is same vector function \n");
+
+	return is_same_vector_value;
 }
 
