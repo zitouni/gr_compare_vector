@@ -16,7 +16,7 @@ howto_api.h
 gr_block.h
 -
 
-../include/howto_square2_ff.h
+../include/howto_vector_source2.h
 howto_api.h
 -
 gr_sync_block.h
@@ -75,8 +75,8 @@ iterator
 -
 howto_compare_vector_cci.h
 /home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_compare_vector_cci.h
-howto_square2_ff.h
-/home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_square2_ff.h
+howto_vector_source2.h
+/home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_vector_source2.h
 limits.h
 -
 

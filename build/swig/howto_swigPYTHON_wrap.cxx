@@ -2956,7 +2956,7 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[11]
 #define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[12]
 #define SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t swig_types[13]
-#define SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t swig_types[14]
+#define SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t swig_types[14]
 #define SWIGTYPE_p_char swig_types[15]
 #define SWIGTYPE_p_difference_type swig_types[16]
 #define SWIGTYPE_p_gr_basic_block swig_types[17]
@@ -2971,7 +2971,7 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_gr_vector_void_star swig_types[26]
 #define SWIGTYPE_p_gruel__rt_status_t swig_types[27]
 #define SWIGTYPE_p_howto_compare_vector_cci swig_types[28]
-#define SWIGTYPE_p_howto_square2_ff swig_types[29]
+#define SWIGTYPE_p_howto_vector_source2 swig_types[29]
 #define SWIGTYPE_p_long_long swig_types[30]
 #define SWIGTYPE_p_size_type swig_types[31]
 #define SWIGTYPE_p_std__complexT_double_t swig_types[32]
@@ -4368,7 +4368,7 @@ namespace swig
 
 
 #include "howto_compare_vector_cci.h"
-#include "howto_square2_ff.h"
+#include "howto_vector_source2.h"
 
 
 #include <limits.h>
@@ -6687,13 +6687,13 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_howto_square2_ff_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_howto_vector_source2_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *result = 0 ;
+  boost::shared_ptr< howto_vector_source2 > *result = 0 ;
   
   {
     try {
-      result = (boost::shared_ptr< howto_square2_ff > *)new boost::shared_ptr< howto_square2_ff >();
+      result = (boost::shared_ptr< howto_vector_source2 > *)new boost::shared_ptr< howto_vector_source2 >();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -6703,30 +6703,30 @@ SWIGINTERN PyObject *_wrap_new_howto_square2_ff_sptr__SWIG_0(PyObject *SWIGUNUSE
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_howto_square2_ff_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_howto_vector_source2_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  howto_square2_ff *arg1 = (howto_square2_ff *) 0 ;
+  howto_vector_source2 *arg1 = (howto_vector_source2 *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  boost::shared_ptr< howto_square2_ff > *result = 0 ;
+  boost::shared_ptr< howto_vector_source2 > *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"new_howto_square2_ff_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_howto_square2_ff, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"new_howto_vector_source2_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_howto_vector_source2, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_howto_square2_ff_sptr" "', argument " "1"" of type '" "howto_square2_ff *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_howto_vector_source2_sptr" "', argument " "1"" of type '" "howto_vector_source2 *""'"); 
   }
-  arg1 = reinterpret_cast< howto_square2_ff * >(argp1);
+  arg1 = reinterpret_cast< howto_vector_source2 * >(argp1);
   {
     try {
-      result = (boost::shared_ptr< howto_square2_ff > *)new boost::shared_ptr< howto_square2_ff >(arg1);
+      result = (boost::shared_ptr< howto_vector_source2 > *)new boost::shared_ptr< howto_vector_source2 >(arg1);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -6736,14 +6736,14 @@ SWIGINTERN PyObject *_wrap_new_howto_square2_ff_sptr__SWIG_1(PyObject *SWIGUNUSE
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_howto_square2_ff_sptr(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_howto_vector_source2_sptr(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[2];
   int ii;
@@ -6754,44 +6754,44 @@ SWIGINTERN PyObject *_wrap_new_howto_square2_ff_sptr(PyObject *self, PyObject *a
     argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
   if (argc == 0) {
-    return _wrap_new_howto_square2_ff_sptr__SWIG_0(self, args);
+    return _wrap_new_howto_vector_source2_sptr__SWIG_0(self, args);
   }
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_howto_square2_ff, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_howto_vector_source2, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_new_howto_square2_ff_sptr__SWIG_1(self, args);
+      return _wrap_new_howto_vector_source2_sptr__SWIG_1(self, args);
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_howto_square2_ff_sptr'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_howto_vector_source2_sptr'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    boost::shared_ptr< howto_square2_ff >::shared_ptr()\n"
-    "    boost::shared_ptr< howto_square2_ff >::shared_ptr(howto_square2_ff *)\n");
+    "    boost::shared_ptr< howto_vector_source2 >::shared_ptr()\n"
+    "    boost::shared_ptr< howto_vector_source2 >::shared_ptr(howto_vector_source2 *)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  howto_square2_ff *result = 0 ;
+  howto_vector_source2 *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr___deref__",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
-      result = (howto_square2_ff *)(arg1)->operator ->();
+      result = (howto_vector_source2 *)(arg1)->operator ->();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -6801,26 +6801,26 @@ SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr___deref__(PyObject *SWIGUNUSEDP
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_howto_square2_ff, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_howto_vector_source2, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_howto_square2_ff_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_delete_howto_vector_source2_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"delete_howto_square2_ff_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, SWIG_POINTER_DISOWN |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"delete_howto_vector_source2_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_howto_square2_ff_sptr" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_howto_vector_source2_sptr" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       delete arg1;
@@ -6840,9 +6840,41 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_rewind(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_rewind",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_rewind" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
+  {
+    try {
+      (*arg1)->rewind();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   int arg2 ;
   gr_vector_const_void_star *arg3 = 0 ;
   gr_vector_void_star *arg4 = 0 ;
@@ -6863,31 +6895,31 @@ SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_work(PyObject *SWIGUNUSEDPARM(s
   };
   int result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:howto_square2_ff_sptr_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:howto_vector_source2_sptr_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_work" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_work" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_square2_ff_sptr_work" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_vector_source2_sptr_work" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "howto_square2_ff_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "howto_vector_source2_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
   }
   if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "howto_square2_ff_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "howto_vector_source2_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
   }
   arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
   res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
   if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "howto_square2_ff_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "howto_vector_source2_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
   }
   if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "howto_square2_ff_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "howto_vector_source2_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
   }
   arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
   {
@@ -6909,20 +6941,71 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_set_data(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
+  std::vector< unsigned char,std::allocator< unsigned char > > *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "data", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:howto_vector_source2_sptr_set_data",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_set_data" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
+  {
+    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "howto_vector_source2_sptr_set_data" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "howto_vector_source2_sptr_set_data" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  {
+    try {
+      (*arg1)->set_data((std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_history",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_history",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (unsigned int)(*arg1)->history();
@@ -6942,20 +7025,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (int)(*arg1)->output_multiple();
@@ -6975,20 +7058,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   double result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (double)(*arg1)->relative_rate();
@@ -7008,20 +7091,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   bool result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_start",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_start",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (bool)(*arg1)->start();
@@ -7041,20 +7124,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   bool result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_stop",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_stop",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (bool)(*arg1)->stop();
@@ -7074,9 +7157,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   unsigned int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -7089,15 +7172,15 @@ SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_nitems_read(PyObject *SWIGUNUSE
   };
   uint64_t result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:howto_square2_ff_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:howto_vector_source2_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_square2_ff_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_vector_source2_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
   } 
   arg2 = static_cast< unsigned int >(val2);
   {
@@ -7119,9 +7202,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   unsigned int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -7134,15 +7217,15 @@ SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_nitems_written(PyObject *SWIGUN
   };
   uint64_t result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:howto_square2_ff_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:howto_vector_source2_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_square2_ff_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_vector_source2_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
   } 
   arg2 = static_cast< unsigned int >(val2);
   {
@@ -7164,20 +7247,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   gr_block_detail_sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_detail",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_detail",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_detail" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_detail" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (*arg1)->detail();
@@ -7197,9 +7280,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_set_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_set_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   gr_block_detail_sptr arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -7211,19 +7294,19 @@ SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_set_detail(PyObject *SWIGUNUSED
     (char *) "self",(char *) "detail", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:howto_square2_ff_sptr_set_detail",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:howto_vector_source2_sptr_set_detail",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_set_detail" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_set_detail" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t,  0  | 0);
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "howto_square2_ff_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "howto_vector_source2_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "howto_square2_ff_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "howto_vector_source2_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'");
     } else {
       gr_block_detail_sptr * temp = reinterpret_cast< gr_block_detail_sptr * >(argp2);
       arg2 = *temp;
@@ -7249,20 +7332,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::string result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_name",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_name",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (*arg1)->name();
@@ -7282,20 +7365,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   gr_io_signature_sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_input_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_input_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (*arg1)->input_signature();
@@ -7315,20 +7398,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   gr_io_signature_sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_output_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_output_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (*arg1)->output_signature();
@@ -7348,20 +7431,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   long result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_unique_id",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_unique_id",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (long)(*arg1)->unique_id();
@@ -7381,20 +7464,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   gr_basic_block_sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_square2_ff_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"howto_vector_source2_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   {
     try {
       result = (*arg1)->to_basic_block();
@@ -7414,9 +7497,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_howto_vector_source2_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< howto_square2_ff > *arg1 = (boost::shared_ptr< howto_square2_ff > *) 0 ;
+  boost::shared_ptr< howto_vector_source2 > *arg1 = (boost::shared_ptr< howto_vector_source2 > *) 0 ;
   int arg2 ;
   int arg3 ;
   void *argp1 = 0 ;
@@ -7433,20 +7516,20 @@ SWIGINTERN PyObject *_wrap_howto_square2_ff_sptr_check_topology(PyObject *SWIGUN
   };
   bool result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:howto_square2_ff_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:howto_vector_source2_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_square2_ff_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< howto_square2_ff > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_vector_source2_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< howto_vector_source2 > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< howto_square2_ff > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_vector_source2 > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_square2_ff_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_vector_source2_sptr_check_topology" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   ecode3 = SWIG_AsVal_int(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "howto_square2_ff_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "howto_vector_source2_sptr_check_topology" "', argument " "3"" of type '" "int""'");
   } 
   arg3 = static_cast< int >(val3);
   {
@@ -7468,20 +7551,83 @@ fail:
 }
 
 
-SWIGINTERN PyObject *howto_square2_ff_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *howto_vector_source2_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_square2_ff(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_vector_source2(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  howto_square2_ff_sptr result;
+  std::vector< unsigned char,std::allocator< unsigned char > > *arg1 = 0 ;
+  std::vector< unsigned char,std::allocator< unsigned char > > *arg2 = 0 ;
+  bool arg3 ;
+  bool arg4 = (bool) false ;
+  int arg5 = (int) 1 ;
+  int res1 = SWIG_OLDOBJ ;
+  int res2 = SWIG_OLDOBJ ;
+  bool val3 ;
+  int ecode3 = 0 ;
+  bool val4 ;
+  int ecode4 = 0 ;
+  int val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  char *  kwnames[] = {
+    (char *) "data",(char *) "preamble",(char *) "with_preamble",(char *) "repeat",(char *) "vlen", NULL 
+  };
+  howto_vector_source2_sptr result;
   
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO|OO:vector_source2",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  {
+    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    res1 = swig::asptr(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_source2" "', argument " "1"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_source2" "', argument " "1"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  {
+    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "vector_source2" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_source2" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  ecode3 = SWIG_AsVal_bool(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_source2" "', argument " "3"" of type '" "bool""'");
+  } 
+  arg3 = static_cast< bool >(val3);
+  if (obj3) {
+    ecode4 = SWIG_AsVal_bool(obj3, &val4);
+    if (!SWIG_IsOK(ecode4)) {
+      SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "vector_source2" "', argument " "4"" of type '" "bool""'");
+    } 
+    arg4 = static_cast< bool >(val4);
+  }
+  if (obj4) {
+    ecode5 = SWIG_AsVal_int(obj4, &val5);
+    if (!SWIG_IsOK(ecode5)) {
+      SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "vector_source2" "', argument " "5"" of type '" "int""'");
+    } 
+    arg5 = static_cast< int >(val5);
+  }
   {
     try {
-      result = howto_make_square2_ff();
+      result = howto_make_vector_source2((std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg1,(std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg2,arg3,arg4,arg5);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -7491,9 +7637,13 @@ SWIGINTERN PyObject *_wrap_square2_ff(PyObject *SWIGUNUSEDPARM(self), PyObject *
     }
     
   }
-  resultobj = SWIG_NewPointerObj((new howto_square2_ff_sptr(static_cast< const howto_square2_ff_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_howto_square2_ff_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_NewPointerObj((new howto_vector_source2_sptr(static_cast< const howto_vector_source2_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_howto_vector_source2_t, SWIG_POINTER_OWN |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return resultobj;
 fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return NULL;
 }
 
@@ -7573,46 +7723,57 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"Params: (data, preamble, iteration_data_reg, min_threshold_error, repeat)\n"
 		""},
-	 { (char *)"new_howto_square2_ff_sptr", _wrap_new_howto_square2_ff_sptr, METH_VARARGS, (char *)"\n"
-		"howto_square2_ff_sptr()\n"
-		"new_howto_square2_ff_sptr( p) -> howto_square2_ff_sptr\n"
+	 { (char *)"new_howto_vector_source2_sptr", _wrap_new_howto_vector_source2_sptr, METH_VARARGS, (char *)"\n"
+		"howto_vector_source2_sptr()\n"
+		"new_howto_vector_source2_sptr( p) -> howto_vector_source2_sptr\n"
 		""},
-	 { (char *)"howto_square2_ff_sptr___deref__", _wrap_howto_square2_ff_sptr___deref__, METH_VARARGS, (char *)"howto_square2_ff_sptr___deref__(howto_square2_ff_sptr self)"},
-	 { (char *)"delete_howto_square2_ff_sptr", _wrap_delete_howto_square2_ff_sptr, METH_VARARGS, (char *)"delete_howto_square2_ff_sptr(howto_square2_ff_sptr self)"},
-	 { (char *)"howto_square2_ff_sptr_work", (PyCFunction) _wrap_howto_square2_ff_sptr_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"howto_square2_ff_sptr_work(howto_square2_ff_sptr self, int noutput_items, gr_vector_const_void_star input_items, \n"
-		"    gr_vector_void_star output_items) -> int\n"
+	 { (char *)"howto_vector_source2_sptr___deref__", _wrap_howto_vector_source2_sptr___deref__, METH_VARARGS, (char *)"howto_vector_source2_sptr___deref__(howto_vector_source2_sptr self)"},
+	 { (char *)"delete_howto_vector_source2_sptr", _wrap_delete_howto_vector_source2_sptr, METH_VARARGS, (char *)"delete_howto_vector_source2_sptr(howto_vector_source2_sptr self)"},
+	 { (char *)"howto_vector_source2_sptr_rewind", _wrap_howto_vector_source2_sptr_rewind, METH_VARARGS, (char *)"\n"
+		"howto_vector_source2_sptr_rewind(howto_vector_source2_sptr self)\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"howto_vector_source2_sptr_work", (PyCFunction) _wrap_howto_vector_source2_sptr_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"howto_vector_source2_sptr_work(howto_vector_source2_sptr self, int noutput_items, \n"
+		"    gr_vector_const_void_star input_items, gr_vector_void_star output_items) -> int\n"
 		"\n"
 		"Params: (noutput_items, input_items, output_items)\n"
 		""},
-	 { (char *)"howto_square2_ff_sptr_history", _wrap_howto_square2_ff_sptr_history, METH_VARARGS, (char *)"howto_square2_ff_sptr_history(howto_square2_ff_sptr self) -> unsigned int"},
-	 { (char *)"howto_square2_ff_sptr_output_multiple", _wrap_howto_square2_ff_sptr_output_multiple, METH_VARARGS, (char *)"howto_square2_ff_sptr_output_multiple(howto_square2_ff_sptr self) -> int"},
-	 { (char *)"howto_square2_ff_sptr_relative_rate", _wrap_howto_square2_ff_sptr_relative_rate, METH_VARARGS, (char *)"howto_square2_ff_sptr_relative_rate(howto_square2_ff_sptr self) -> double"},
-	 { (char *)"howto_square2_ff_sptr_start", _wrap_howto_square2_ff_sptr_start, METH_VARARGS, (char *)"howto_square2_ff_sptr_start(howto_square2_ff_sptr self) -> bool"},
-	 { (char *)"howto_square2_ff_sptr_stop", _wrap_howto_square2_ff_sptr_stop, METH_VARARGS, (char *)"howto_square2_ff_sptr_stop(howto_square2_ff_sptr self) -> bool"},
-	 { (char *)"howto_square2_ff_sptr_nitems_read", (PyCFunction) _wrap_howto_square2_ff_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"howto_square2_ff_sptr_nitems_read(howto_square2_ff_sptr self, unsigned int which_input) -> uint64_t"},
-	 { (char *)"howto_square2_ff_sptr_nitems_written", (PyCFunction) _wrap_howto_square2_ff_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"howto_square2_ff_sptr_nitems_written(howto_square2_ff_sptr self, unsigned int which_output) -> uint64_t"},
-	 { (char *)"howto_square2_ff_sptr_detail", _wrap_howto_square2_ff_sptr_detail, METH_VARARGS, (char *)"howto_square2_ff_sptr_detail(howto_square2_ff_sptr self) -> gr_block_detail_sptr"},
-	 { (char *)"howto_square2_ff_sptr_set_detail", (PyCFunction) _wrap_howto_square2_ff_sptr_set_detail, METH_VARARGS | METH_KEYWORDS, (char *)"howto_square2_ff_sptr_set_detail(howto_square2_ff_sptr self, gr_block_detail_sptr detail)"},
-	 { (char *)"howto_square2_ff_sptr_name", _wrap_howto_square2_ff_sptr_name, METH_VARARGS, (char *)"howto_square2_ff_sptr_name(howto_square2_ff_sptr self) -> string"},
-	 { (char *)"howto_square2_ff_sptr_input_signature", _wrap_howto_square2_ff_sptr_input_signature, METH_VARARGS, (char *)"howto_square2_ff_sptr_input_signature(howto_square2_ff_sptr self) -> gr_io_signature_sptr"},
-	 { (char *)"howto_square2_ff_sptr_output_signature", _wrap_howto_square2_ff_sptr_output_signature, METH_VARARGS, (char *)"howto_square2_ff_sptr_output_signature(howto_square2_ff_sptr self) -> gr_io_signature_sptr"},
-	 { (char *)"howto_square2_ff_sptr_unique_id", _wrap_howto_square2_ff_sptr_unique_id, METH_VARARGS, (char *)"howto_square2_ff_sptr_unique_id(howto_square2_ff_sptr self) -> long"},
-	 { (char *)"howto_square2_ff_sptr_to_basic_block", _wrap_howto_square2_ff_sptr_to_basic_block, METH_VARARGS, (char *)"howto_square2_ff_sptr_to_basic_block(howto_square2_ff_sptr self) -> gr_basic_block_sptr"},
-	 { (char *)"howto_square2_ff_sptr_check_topology", (PyCFunction) _wrap_howto_square2_ff_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"howto_square2_ff_sptr_check_topology(howto_square2_ff_sptr self, int ninputs, int noutputs) -> bool"},
-	 { (char *)"howto_square2_ff_sptr_swigregister", howto_square2_ff_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"square2_ff", _wrap_square2_ff, METH_VARARGS, (char *)"\n"
-		"square2_ff() -> howto_square2_ff_sptr\n"
+	 { (char *)"howto_vector_source2_sptr_set_data", (PyCFunction) _wrap_howto_vector_source2_sptr_set_data, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"howto_vector_source2_sptr_set_data(howto_vector_source2_sptr self, __dummy_0__ data)\n"
+		"\n"
+		"Params: (data)\n"
+		""},
+	 { (char *)"howto_vector_source2_sptr_history", _wrap_howto_vector_source2_sptr_history, METH_VARARGS, (char *)"howto_vector_source2_sptr_history(howto_vector_source2_sptr self) -> unsigned int"},
+	 { (char *)"howto_vector_source2_sptr_output_multiple", _wrap_howto_vector_source2_sptr_output_multiple, METH_VARARGS, (char *)"howto_vector_source2_sptr_output_multiple(howto_vector_source2_sptr self) -> int"},
+	 { (char *)"howto_vector_source2_sptr_relative_rate", _wrap_howto_vector_source2_sptr_relative_rate, METH_VARARGS, (char *)"howto_vector_source2_sptr_relative_rate(howto_vector_source2_sptr self) -> double"},
+	 { (char *)"howto_vector_source2_sptr_start", _wrap_howto_vector_source2_sptr_start, METH_VARARGS, (char *)"howto_vector_source2_sptr_start(howto_vector_source2_sptr self) -> bool"},
+	 { (char *)"howto_vector_source2_sptr_stop", _wrap_howto_vector_source2_sptr_stop, METH_VARARGS, (char *)"howto_vector_source2_sptr_stop(howto_vector_source2_sptr self) -> bool"},
+	 { (char *)"howto_vector_source2_sptr_nitems_read", (PyCFunction) _wrap_howto_vector_source2_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"howto_vector_source2_sptr_nitems_read(howto_vector_source2_sptr self, unsigned int which_input) -> uint64_t"},
+	 { (char *)"howto_vector_source2_sptr_nitems_written", (PyCFunction) _wrap_howto_vector_source2_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"howto_vector_source2_sptr_nitems_written(howto_vector_source2_sptr self, unsigned int which_output) -> uint64_t"},
+	 { (char *)"howto_vector_source2_sptr_detail", _wrap_howto_vector_source2_sptr_detail, METH_VARARGS, (char *)"howto_vector_source2_sptr_detail(howto_vector_source2_sptr self) -> gr_block_detail_sptr"},
+	 { (char *)"howto_vector_source2_sptr_set_detail", (PyCFunction) _wrap_howto_vector_source2_sptr_set_detail, METH_VARARGS | METH_KEYWORDS, (char *)"howto_vector_source2_sptr_set_detail(howto_vector_source2_sptr self, gr_block_detail_sptr detail)"},
+	 { (char *)"howto_vector_source2_sptr_name", _wrap_howto_vector_source2_sptr_name, METH_VARARGS, (char *)"howto_vector_source2_sptr_name(howto_vector_source2_sptr self) -> string"},
+	 { (char *)"howto_vector_source2_sptr_input_signature", _wrap_howto_vector_source2_sptr_input_signature, METH_VARARGS, (char *)"howto_vector_source2_sptr_input_signature(howto_vector_source2_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"howto_vector_source2_sptr_output_signature", _wrap_howto_vector_source2_sptr_output_signature, METH_VARARGS, (char *)"howto_vector_source2_sptr_output_signature(howto_vector_source2_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"howto_vector_source2_sptr_unique_id", _wrap_howto_vector_source2_sptr_unique_id, METH_VARARGS, (char *)"howto_vector_source2_sptr_unique_id(howto_vector_source2_sptr self) -> long"},
+	 { (char *)"howto_vector_source2_sptr_to_basic_block", _wrap_howto_vector_source2_sptr_to_basic_block, METH_VARARGS, (char *)"howto_vector_source2_sptr_to_basic_block(howto_vector_source2_sptr self) -> gr_basic_block_sptr"},
+	 { (char *)"howto_vector_source2_sptr_check_topology", (PyCFunction) _wrap_howto_vector_source2_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"howto_vector_source2_sptr_check_topology(howto_vector_source2_sptr self, int ninputs, int noutputs) -> bool"},
+	 { (char *)"howto_vector_source2_sptr_swigregister", howto_vector_source2_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"vector_source2", (PyCFunction) _wrap_vector_source2, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"vector_source2(__dummy_0__ data, __dummy_0__ preamble, bool with_preamble, \n"
+		"    bool repeat = False, int vlen = 1) -> howto_vector_source2_sptr\n"
 		"\n"
 		"square2 a stream of floats.\n"
 		"\n"
 		"This uses the preferred technique: subclassing gr_sync_block.\n"
 		"\n"
-		"Return a shared_ptr to a new instance of howto_square2_ff.\n"
+		"Return a shared_ptr to a new instance of howto_vector_source2.\n"
 		"\n"
-		"To avoid accidental use of raw pointers, howto_square2_ff's constructor is private. howto_make_square2_ff is the public interface for creating new instances.\n"
+		"To avoid accidental use of raw pointers, howto_vector_source2's constructor is private. howto_make_vector_source2 is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (NONE)\n"
+		"Params: (data, preamble, with_preamble, repeat, vlen)\n"
 		""},
 	 { NULL, NULL, 0, NULL }
 };
@@ -7623,11 +7784,11 @@ static PyMethodDef SwigMethods[] = {
 static void *_p_howto_compare_vector_cciTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *) ((howto_compare_vector_cci *) x));
 }
-static void *_p_howto_square2_ffTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((howto_square2_ff *) x));
-}
 static void *_p_gr_sync_decimatorTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((gr_sync_decimator *) x));
+}
+static void *_p_howto_vector_source2To_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((howto_vector_source2 *) x));
 }
 static void *_p_gr_hier_block2To_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *)  ((gr_hier_block2 *) x));
@@ -7644,11 +7805,11 @@ static void *_p_gr_sync_interpolatorTo_p_gr_basic_block(void *x, int *SWIGUNUSED
 static void *_p_gr_top_blockTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_hier_block2 *) ((gr_top_block *) x));
 }
-static void *_p_howto_square2_ffTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_sync_block *)  ((howto_square2_ff *) x));
-}
 static void *_p_gr_sync_decimatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((gr_sync_decimator *) x));
+}
+static void *_p_howto_vector_source2To_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *)  ((howto_vector_source2 *) x));
 }
 static void *_p_gr_sync_interpolatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((gr_sync_interpolator *) x));
@@ -7656,11 +7817,11 @@ static void *_p_gr_sync_interpolatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDP
 static void *_p_howto_compare_vector_cciTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *)  ((howto_compare_vector_cci *) x));
 }
-static void *_p_howto_square2_ffTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_block *) (gr_sync_block *) ((howto_square2_ff *) x));
-}
 static void *_p_gr_sync_decimatorTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *) ((gr_sync_decimator *) x));
+}
+static void *_p_howto_vector_source2To_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_block *) (gr_sync_block *) ((howto_vector_source2 *) x));
 }
 static void *_p_gr_sync_blockTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *)  ((gr_sync_block *) x));
@@ -7682,7 +7843,7 @@ static swig_type_info _swigt__p_boost__shared_ptrT_gr_msg_queue_t = {"_p_boost__
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_single_threaded_scheduler_t = {"_p_boost__shared_ptrT_gr_single_threaded_scheduler_t", "boost::shared_ptr< gr_single_threaded_scheduler > *|gr_single_threaded_scheduler_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_top_block_t = {"_p_boost__shared_ptrT_gr_top_block_t", "boost::shared_ptr< gr_top_block > *|gr_top_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_howto_compare_vector_cci_t = {"_p_boost__shared_ptrT_howto_compare_vector_cci_t", "boost::shared_ptr< howto_compare_vector_cci > *|howto_compare_vector_cci_sptr *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_boost__shared_ptrT_howto_square2_ff_t = {"_p_boost__shared_ptrT_howto_square2_ff_t", "boost::shared_ptr< howto_square2_ff > *|howto_square2_ff_sptr *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_howto_vector_source2_t = {"_p_boost__shared_ptrT_howto_vector_source2_t", "boost::shared_ptr< howto_vector_source2 > *|howto_vector_source2_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_basic_block = {"_p_gr_basic_block", "gr_basic_block *", 0, 0, (void*)0, 0};
@@ -7697,7 +7858,7 @@ static swig_type_info _swigt__p_gr_vector_int = {"_p_gr_vector_int", "gr_vector_
 static swig_type_info _swigt__p_gr_vector_void_star = {"_p_gr_vector_void_star", "gr_vector_void_star *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gruel__rt_status_t = {"_p_gruel__rt_status_t", "enum gruel::rt_status_t *|gruel::rt_status_t *|gr_rt_status_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_howto_compare_vector_cci = {"_p_howto_compare_vector_cci", "howto_compare_vector_cci *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_howto_square2_ff = {"_p_howto_square2_ff", "howto_square2_ff *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_howto_vector_source2 = {"_p_howto_vector_source2", "howto_vector_source2 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long_long = {"_p_long_long", "int64_t *|long long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__complexT_double_t = {"_p_std__complexT_double_t", "gr_complexd *|std::complex< double > *", 0, 0, (void*)0, 0};
@@ -7722,7 +7883,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_gr_single_threaded_scheduler_t,
   &_swigt__p_boost__shared_ptrT_gr_top_block_t,
   &_swigt__p_boost__shared_ptrT_howto_compare_vector_cci_t,
-  &_swigt__p_boost__shared_ptrT_howto_square2_ff_t,
+  &_swigt__p_boost__shared_ptrT_howto_vector_source2_t,
   &_swigt__p_char,
   &_swigt__p_difference_type,
   &_swigt__p_gr_basic_block,
@@ -7737,7 +7898,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gr_vector_void_star,
   &_swigt__p_gruel__rt_status_t,
   &_swigt__p_howto_compare_vector_cci,
-  &_swigt__p_howto_square2_ff,
+  &_swigt__p_howto_vector_source2,
   &_swigt__p_long_long,
   &_swigt__p_size_type,
   &_swigt__p_std__complexT_double_t,
@@ -7762,22 +7923,22 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_gr_msg_queue_t[] = {  {&_swig
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_single_threaded_scheduler_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_single_threaded_scheduler_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_top_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_top_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_howto_compare_vector_cci_t[] = {  {&_swigt__p_boost__shared_ptrT_howto_compare_vector_cci_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_boost__shared_ptrT_howto_square2_ff_t[] = {  {&_swigt__p_boost__shared_ptrT_howto_square2_ff_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_howto_vector_source2_t[] = {  {&_swigt__p_boost__shared_ptrT_howto_vector_source2_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_decimator[] = {{&_swigt__p_gr_sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_hier_block2[] = {{&_swigt__p_gr_hier_block2, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_interpolator[] = {{&_swigt__p_gr_sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_top_block[] = {{&_swigt__p_gr_top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_howto_compare_vector_cci, _p_howto_compare_vector_cciTo_p_gr_basic_block, 0, 0},  {&_swigt__p_howto_square2_ff, _p_howto_square2_ffTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_howto_compare_vector_cci, _p_howto_compare_vector_cciTo_p_gr_block, 0, 0},  {&_swigt__p_howto_square2_ff, _p_howto_square2_ffTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_howto_square2_ff, _p_howto_square2_ffTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_howto_compare_vector_cci, _p_howto_compare_vector_cciTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_howto_vector_source2, _p_howto_vector_source2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_howto_compare_vector_cci, _p_howto_compare_vector_cciTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_howto_vector_source2, _p_howto_vector_source2To_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_howto_vector_source2, _p_howto_vector_source2To_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_const_void_star[] = {  {&_swigt__p_gr_vector_const_void_star, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_int[] = {  {&_swigt__p_gr_vector_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_void_star[] = {  {&_swigt__p_gr_vector_void_star, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gruel__rt_status_t[] = {  {&_swigt__p_gruel__rt_status_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_howto_compare_vector_cci[] = {  {&_swigt__p_howto_compare_vector_cci, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_howto_square2_ff[] = {  {&_swigt__p_howto_square2_ff, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_howto_vector_source2[] = {  {&_swigt__p_howto_vector_source2, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__complexT_double_t[] = {  {&_swigt__p_std__complexT_double_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -7802,7 +7963,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_gr_single_threaded_scheduler_t,
   _swigc__p_boost__shared_ptrT_gr_top_block_t,
   _swigc__p_boost__shared_ptrT_howto_compare_vector_cci_t,
-  _swigc__p_boost__shared_ptrT_howto_square2_ff_t,
+  _swigc__p_boost__shared_ptrT_howto_vector_source2_t,
   _swigc__p_char,
   _swigc__p_difference_type,
   _swigc__p_gr_basic_block,
@@ -7817,7 +7978,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gr_vector_void_star,
   _swigc__p_gruel__rt_status_t,
   _swigc__p_howto_compare_vector_cci,
-  _swigc__p_howto_square2_ff,
+  _swigc__p_howto_vector_source2,
   _swigc__p_long_long,
   _swigc__p_size_type,
   _swigc__p_std__complexT_double_t,

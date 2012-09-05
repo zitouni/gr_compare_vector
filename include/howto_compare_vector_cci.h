@@ -85,6 +85,7 @@ private:
   int 						nbr_initial_bits_usrp;
 
   bool preamble_received;
+  bool data_received;
 
 
  public:

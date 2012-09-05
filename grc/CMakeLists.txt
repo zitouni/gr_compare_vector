@@ -19,6 +19,6 @@
 
 install(FILES
     howto_compare_vector_cci.xml
-    howto_square2_ff.xml
+    howto_vector_source2.xml
     DESTINATION share/gnuradio/grc/blocks
 )

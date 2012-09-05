@@ -171,26 +171,27 @@
 <codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbr_initial_bits_usrp;</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>preamble_received;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data_received;</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/>~<ref refid="classhowto__compare__vector__cci" kindref="compound" tooltip="square a stream of floats.">howto_compare_vector_cci</ref><sp/>();<sp/></highlight><highlight class="comment">//<sp/>public<sp/>destructor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>~<ref refid="classhowto__compare__vector__cci" kindref="compound" tooltip="square a stream of floats.">howto_compare_vector_cci</ref><sp/>();<sp/></highlight><highlight class="comment">//<sp/>public<sp/>destructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//function<sp/>to<sp/>return<sp/>the<sp/>boolean<sp/>indicate<sp/>that<sp/>there<sp/>are<sp/>a<sp/>sequence<sp/>eqaul<sp/>to<sp/>the<sp/>d_data<sp/>in<sp/>the<sp/>block</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_same_vector(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_shift_reg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_vector_reg);</highlight></codeline>
-<codeline lineno="96" refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" kindref="member">is_same_vector_value</ref>;</highlight></codeline>
-<codeline lineno="97" refid="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" kindref="member">is_same_vector_number</ref>;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Where<sp/>all<sp/>the<sp/>action<sp/>really<sp/>happens</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>general_work<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_int<sp/>&amp;ninput_items,</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_HOWTO_compare_vector_cci_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//function<sp/>to<sp/>return<sp/>the<sp/>boolean<sp/>indicate<sp/>that<sp/>there<sp/>are<sp/>a<sp/>sequence<sp/>eqaul<sp/>to<sp/>the<sp/>d_data<sp/>in<sp/>the<sp/>block</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_same_vector(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_shift_reg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_vector_reg);</highlight></codeline>
+<codeline lineno="97" refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" kindref="member">is_same_vector_value</ref>;</highlight></codeline>
+<codeline lineno="98" refid="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" kindref="member">is_same_vector_number</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Where<sp/>all<sp/>the<sp/>action<sp/>really<sp/>happens</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>general_work<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_int<sp/>&amp;ninput_items,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_HOWTO_compare_vector_cci_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h"/>
   </compounddef>

@@ -106,6 +106,7 @@
     <member refid="classhowto__compare__vector__cci_1afbad328860d580453d84fc5143621cf4" kind="variable"><name>number_bits</name></member>
     <member refid="classhowto__compare__vector__cci_1ac6e28fb57c1c0607fe95b171577af5ca" kind="variable"><name>nbr_initial_bits_usrp</name></member>
     <member refid="classhowto__compare__vector__cci_1a19e8ee9512800f57a34a59a183e815be" kind="variable"><name>preamble_received</name></member>
+    <member refid="classhowto__compare__vector__cci_1a5c9959067314ecff89d2478cf070b4e1" kind="variable"><name>data_received</name></member>
     <member refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" kind="variable"><name>is_same_vector_value</name></member>
     <member refid="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" kind="variable"><name>is_same_vector_number</name></member>
     <member refid="classhowto__compare__vector__cci_1a20488f7b2ad31a36cc92e36b47a2a2a6" kind="friend"><name>howto_make_compare_vector_cci</name></member>
@@ -114,11 +115,20 @@
     <member refid="classhowto__compare__vector__cci_1abf69ef7d610406db881c088e83a18ea2" kind="function"><name>is_same_vector</name></member>
     <member refid="classhowto__compare__vector__cci_1a566f6c3f640c2be7db626c551607618d" kind="function"><name>general_work</name></member>
   </compound>
-  <compound refid="classhowto__square2__ff" kind="class"><name>howto_square2_ff</name>
-    <member refid="classhowto__square2__ff_1a416c317eec9d35ca8a188f4f3e9e91c3" kind="friend"><name>howto_make_square2_ff</name></member>
-    <member refid="classhowto__square2__ff_1a6e92c82417fa37ab91f75257efc405cd" kind="function"><name>howto_square2_ff</name></member>
-    <member refid="classhowto__square2__ff_1adc73eeb47d46022cd7b91f081c12c0aa" kind="function"><name>~howto_square2_ff</name></member>
-    <member refid="classhowto__square2__ff_1a29e6a178f3b2bc4221db3efcae959e20" kind="function"><name>work</name></member>
+  <compound refid="classhowto__vector__source2" kind="class"><name>howto_vector_source2</name>
+    <member refid="classhowto__vector__source2_1ab9b8b87ab2488b9b877f2c4006275fe8" kind="variable"><name>d_data</name></member>
+    <member refid="classhowto__vector__source2_1af72663bfc0f80760add37d7b71a06d19" kind="variable"><name>d_preamble</name></member>
+    <member refid="classhowto__vector__source2_1a205012768d273040f52479e0abe31572" kind="variable"><name>d_with_preamble</name></member>
+    <member refid="classhowto__vector__source2_1a7e1d56cf94060b4119aa680c924805bf" kind="variable"><name>d_repeat</name></member>
+    <member refid="classhowto__vector__source2_1adb845336e5d3e7aba0462924d3967d9b" kind="variable"><name>d_offset</name></member>
+    <member refid="classhowto__vector__source2_1a638f575036a1308109235e88b8557660" kind="variable"><name>d_offset_preamble</name></member>
+    <member refid="classhowto__vector__source2_1a5ca1d28f4c41651e54d77ef34b8df572" kind="variable"><name>d_vlen</name></member>
+    <member refid="classhowto__vector__source2_1a04ac26c4e4ef32d4bc168e58ac955970" kind="friend"><name>howto_make_vector_source2</name></member>
+    <member refid="classhowto__vector__source2_1ac18c23e036e1476737989eb07566e0a0" kind="function"><name>howto_vector_source2</name></member>
+    <member refid="classhowto__vector__source2_1a350308ca536043b86bee9f4865c46d00" kind="function"><name>~howto_vector_source2</name></member>
+    <member refid="classhowto__vector__source2_1aa42e19548d28f37a86ec01680a177fb7" kind="function"><name>rewind</name></member>
+    <member refid="classhowto__vector__source2_1a4ea24fca11208fc4befd54511431a236" kind="function"><name>work</name></member>
+    <member refid="classhowto__vector__source2_1a74fbcd14ed3a6826c82a67a55aee9a88" kind="function"><name>set_data</name></member>
   </compound>
   <compound refid="classstd_1_1ifstream" kind="class"><name>std::ifstream</name>
   </compound>
@@ -270,9 +280,9 @@
     <member refid="howto__compare__vector__cci_8h_1a3816408eb1eb8f9013b71927d16e39ba" kind="variable"><name>howto_compare_vector_cci</name></member>
     <member refid="howto__compare__vector__cci_8h_1a20488f7b2ad31a36cc92e36b47a2a2a6" kind="function"><name>howto_make_compare_vector_cci</name></member>
   </compound>
-  <compound refid="howto__square2__ff_8h" kind="file"><name>howto_square2_ff.h</name>
-    <member refid="howto__square2__ff_8h_1a950d80b5e8cf51085a2edc16295da5fd" kind="typedef"><name>howto_square2_ff_sptr</name></member>
-    <member refid="howto__square2__ff_8h_1a416c317eec9d35ca8a188f4f3e9e91c3" kind="function"><name>howto_make_square2_ff</name></member>
+  <compound refid="howto__vector__source2_8h" kind="file"><name>howto_vector_source2.h</name>
+    <member refid="howto__vector__source2_8h_1abb75b6f39880e4baec7c9dd9b67ab949" kind="typedef"><name>howto_vector_source2_sptr</name></member>
+    <member refid="howto__vector__source2_8h_1a4ed26e44c94c267093ef05c99bcfc39c" kind="function"><name>howto_make_vector_source2</name></member>
   </compound>
   <compound refid="dir_b46e668a8d73190e28c49c0c5dfafb7b" kind="dir"><name>/home/zitouni/git/workspace/gr_compare_vector/include/</name>
   </compound>

@@ -21,10 +21,10 @@ lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o
  /usr/local/include/gruel/msg_accepter.h
  /usr/local/include/gruel/pmt.h
  /usr/local/include/gruel/pmt_sugar.h
-lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o
+lib/CMakeFiles/gnuradio-howto.dir/howto_vector_source2.cc.o
  ../include/howto_api.h
- ../include/howto_square2_ff.h
- /home/zitouni/git/workspace/gr_compare_vector/lib/howto_square2_ff.cc
+ ../include/howto_vector_source2.h
+ /home/zitouni/git/workspace/gr_compare_vector/lib/howto_vector_source2.cc
  /usr/local/include/gnuradio/gr_basic_block.h
  /usr/local/include/gnuradio/gr_block.h
  /usr/local/include/gnuradio/gr_complex.h

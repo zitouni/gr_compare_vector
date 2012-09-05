@@ -273,24 +273,32 @@ def compare_vector_cci(*args, **kwargs):
     Params: (data, preamble, iteration_data_reg, min_threshold_error, repeat)
     """
   return _howto_swig.compare_vector_cci(*args, **kwargs)
-class howto_square2_ff_sptr(object):
-    """Proxy of C++ boost::shared_ptr<(howto_square2_ff)> class"""
+class howto_vector_source2_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(howto_vector_source2)> class"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
-        __init__(self) -> howto_square2_ff_sptr
-        __init__(self,  p) -> howto_square2_ff_sptr
+        __init__(self) -> howto_vector_source2_sptr
+        __init__(self,  p) -> howto_vector_source2_sptr
         """
-        this = _howto_swig.new_howto_square2_ff_sptr(*args)
+        this = _howto_swig.new_howto_vector_source2_sptr(*args)
         try: self.this.append(this)
         except: self.this = this
     def __deref__(self):
         """__deref__(self)"""
-        return _howto_swig.howto_square2_ff_sptr___deref__(self)
+        return _howto_swig.howto_vector_source2_sptr___deref__(self)
 
-    __swig_destroy__ = _howto_swig.delete_howto_square2_ff_sptr
+    __swig_destroy__ = _howto_swig.delete_howto_vector_source2_sptr
     __del__ = lambda self : None;
+    def rewind(self):
+        """
+        rewind(self)
+
+        Params: (NONE)
+        """
+        return _howto_swig.howto_vector_source2_sptr_rewind(self)
+
     def work(self, *args, **kwargs):
         """
         work(self, int noutput_items, gr_vector_const_void_star input_items, 
@@ -298,88 +306,97 @@ class howto_square2_ff_sptr(object):
 
         Params: (noutput_items, input_items, output_items)
         """
-        return _howto_swig.howto_square2_ff_sptr_work(self, *args, **kwargs)
+        return _howto_swig.howto_vector_source2_sptr_work(self, *args, **kwargs)
+
+    def set_data(self, *args, **kwargs):
+        """
+        set_data(self, __dummy_0__ data)
+
+        Params: (data)
+        """
+        return _howto_swig.howto_vector_source2_sptr_set_data(self, *args, **kwargs)
 
     def history(self):
         """history(self) -> unsigned int"""
-        return _howto_swig.howto_square2_ff_sptr_history(self)
+        return _howto_swig.howto_vector_source2_sptr_history(self)
 
     def output_multiple(self):
         """output_multiple(self) -> int"""
-        return _howto_swig.howto_square2_ff_sptr_output_multiple(self)
+        return _howto_swig.howto_vector_source2_sptr_output_multiple(self)
 
     def relative_rate(self):
         """relative_rate(self) -> double"""
-        return _howto_swig.howto_square2_ff_sptr_relative_rate(self)
+        return _howto_swig.howto_vector_source2_sptr_relative_rate(self)
 
     def start(self):
         """start(self) -> bool"""
-        return _howto_swig.howto_square2_ff_sptr_start(self)
+        return _howto_swig.howto_vector_source2_sptr_start(self)
 
     def stop(self):
         """stop(self) -> bool"""
-        return _howto_swig.howto_square2_ff_sptr_stop(self)
+        return _howto_swig.howto_vector_source2_sptr_stop(self)
 
     def nitems_read(self, *args, **kwargs):
         """nitems_read(self, unsigned int which_input) -> uint64_t"""
-        return _howto_swig.howto_square2_ff_sptr_nitems_read(self, *args, **kwargs)
+        return _howto_swig.howto_vector_source2_sptr_nitems_read(self, *args, **kwargs)
 
     def nitems_written(self, *args, **kwargs):
         """nitems_written(self, unsigned int which_output) -> uint64_t"""
-        return _howto_swig.howto_square2_ff_sptr_nitems_written(self, *args, **kwargs)
+        return _howto_swig.howto_vector_source2_sptr_nitems_written(self, *args, **kwargs)
 
     def detail(self):
         """detail(self) -> gr_block_detail_sptr"""
-        return _howto_swig.howto_square2_ff_sptr_detail(self)
+        return _howto_swig.howto_vector_source2_sptr_detail(self)
 
     def set_detail(self, *args, **kwargs):
         """set_detail(self, gr_block_detail_sptr detail)"""
-        return _howto_swig.howto_square2_ff_sptr_set_detail(self, *args, **kwargs)
+        return _howto_swig.howto_vector_source2_sptr_set_detail(self, *args, **kwargs)
 
     def name(self):
         """name(self) -> string"""
-        return _howto_swig.howto_square2_ff_sptr_name(self)
+        return _howto_swig.howto_vector_source2_sptr_name(self)
 
     def input_signature(self):
         """input_signature(self) -> gr_io_signature_sptr"""
-        return _howto_swig.howto_square2_ff_sptr_input_signature(self)
+        return _howto_swig.howto_vector_source2_sptr_input_signature(self)
 
     def output_signature(self):
         """output_signature(self) -> gr_io_signature_sptr"""
-        return _howto_swig.howto_square2_ff_sptr_output_signature(self)
+        return _howto_swig.howto_vector_source2_sptr_output_signature(self)
 
     def unique_id(self):
         """unique_id(self) -> long"""
-        return _howto_swig.howto_square2_ff_sptr_unique_id(self)
+        return _howto_swig.howto_vector_source2_sptr_unique_id(self)
 
     def to_basic_block(self):
         """to_basic_block(self) -> gr_basic_block_sptr"""
-        return _howto_swig.howto_square2_ff_sptr_to_basic_block(self)
+        return _howto_swig.howto_vector_source2_sptr_to_basic_block(self)
 
     def check_topology(self, *args, **kwargs):
         """check_topology(self, int ninputs, int noutputs) -> bool"""
-        return _howto_swig.howto_square2_ff_sptr_check_topology(self, *args, **kwargs)
+        return _howto_swig.howto_vector_source2_sptr_check_topology(self, *args, **kwargs)
 
-howto_square2_ff_sptr_swigregister = _howto_swig.howto_square2_ff_sptr_swigregister
-howto_square2_ff_sptr_swigregister(howto_square2_ff_sptr)
+howto_vector_source2_sptr_swigregister = _howto_swig.howto_vector_source2_sptr_swigregister
+howto_vector_source2_sptr_swigregister(howto_vector_source2_sptr)
 
-howto_square2_ff_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
+howto_vector_source2_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
 
 
-def square2_ff():
+def vector_source2(*args, **kwargs):
   """
-    square2_ff() -> howto_square2_ff_sptr
+    vector_source2(__dummy_0__ data, __dummy_0__ preamble, bool with_preamble, 
+        bool repeat = False, int vlen = 1) -> howto_vector_source2_sptr
 
     square2 a stream of floats.
 
     This uses the preferred technique: subclassing gr_sync_block.
 
-    Return a shared_ptr to a new instance of howto_square2_ff.
+    Return a shared_ptr to a new instance of howto_vector_source2.
 
-    To avoid accidental use of raw pointers, howto_square2_ff's constructor is private. howto_make_square2_ff is the public interface for creating new instances.
+    To avoid accidental use of raw pointers, howto_vector_source2's constructor is private. howto_make_vector_source2 is the public interface for creating new instances.
 
-    Params: (NONE)
+    Params: (data, preamble, with_preamble, repeat, vlen)
     """
-  return _howto_swig.square2_ff()
+  return _howto_swig.vector_source2(*args, **kwargs)
 
 

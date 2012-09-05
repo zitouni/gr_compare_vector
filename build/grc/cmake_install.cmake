@@ -35,7 +35,7 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
     "/home/zitouni/git/workspace/gr_compare_vector/grc/howto_compare_vector_cci.xml"
-    "/home/zitouni/git/workspace/gr_compare_vector/grc/howto_square2_ff.xml"
+    "/home/zitouni/git/workspace/gr_compare_vector/grc/howto_vector_source2.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

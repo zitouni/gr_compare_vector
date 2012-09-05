@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.o"
-  "CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o"
+  "CMakeFiles/gnuradio-howto.dir/howto_vector_source2.cc.o"
   "libgnuradio-howto.pdb"
   "libgnuradio-howto.so"
 )

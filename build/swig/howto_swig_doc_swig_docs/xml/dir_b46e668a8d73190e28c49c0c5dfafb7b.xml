@@ -4,7 +4,7 @@
     <compoundname>/home/zitouni/git/workspace/gr_compare_vector/include/</compoundname>
     <innerfile refid="howto__api_8h">howto_api.h</innerfile>
     <innerfile refid="howto__compare__vector__cci_8h">howto_compare_vector_cci.h</innerfile>
-    <innerfile refid="howto__square2__ff_8h">howto_square2_ff.h</innerfile>
+    <innerfile refid="howto__vector__source2_8h">howto_vector_source2.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -38,35 +38,43 @@ To avoid accidental use of raw pointers, howto_compare_vector_cci's constructor 
 
 Params: (data, preamble, iteration_data_reg, min_threshold_error, repeat)"
 
-%feature("docstring") howto_square2_ff "square2 a stream of floats.
+%feature("docstring") howto_vector_source2 "square2 a stream of floats.
 
 This uses the preferred technique: subclassing gr_sync_block.
 
-Return a shared_ptr to a new instance of howto_square2_ff.
+Return a shared_ptr to a new instance of howto_vector_source2.
 
-To avoid accidental use of raw pointers, howto_square2_ff's constructor is private. howto_make_square2_ff is the public interface for creating new instances."
+To avoid accidental use of raw pointers, howto_vector_source2's constructor is private. howto_make_vector_source2 is the public interface for creating new instances."
 
-%feature("docstring") howto_square2_ff::howto_square2_ff "
+%feature("docstring") howto_vector_source2::howto_vector_source2 "
+
+Params: (data, preamble, with_preamble, repeat, vlen)"
+
+%feature("docstring") howto_vector_source2::~howto_vector_source2 "
 
 Params: (NONE)"
 
-%feature("docstring") howto_square2_ff::~howto_square2_ff "
+%feature("docstring") howto_vector_source2::rewind "
 
 Params: (NONE)"
 
-%feature("docstring") howto_square2_ff::work "
+%feature("docstring") howto_vector_source2::work "
 
 Params: (noutput_items, input_items, output_items)"
 
-%feature("docstring") howto_make_square2_ff "square2 a stream of floats.
+%feature("docstring") howto_vector_source2::set_data "
+
+Params: (data)"
+
+%feature("docstring") howto_make_vector_source2 "square2 a stream of floats.
 
 This uses the preferred technique: subclassing gr_sync_block.
 
-Return a shared_ptr to a new instance of howto_square2_ff.
+Return a shared_ptr to a new instance of howto_vector_source2.
 
-To avoid accidental use of raw pointers, howto_square2_ff's constructor is private. howto_make_square2_ff is the public interface for creating new instances.
+To avoid accidental use of raw pointers, howto_vector_source2's constructor is private. howto_make_vector_source2 is the public interface for creating new instances.
 
-Params: (NONE)"
+Params: (data, preamble, with_preamble, repeat, vlen)"
 
 %feature("docstring") std::allocator "STL class."
 

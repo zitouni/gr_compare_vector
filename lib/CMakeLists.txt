@@ -22,7 +22,7 @@
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
 
-add_library(gnuradio-howto SHARED howto_compare_vector_cci.cc howto_square2_ff.cc)
+add_library(gnuradio-howto SHARED howto_compare_vector_cci.cc howto_vector_source2.cc)
 target_link_libraries(gnuradio-howto ${Boost_LIBRARIES} ${GRUEL_LIBRARIES} ${GNURADIO_CORE_LIBRARIES})
 set_target_properties(gnuradio-howto PROPERTIES DEFINE_SYMBOL "gnuradio_howto_EXPORTS")
 
@@ -49,6 +49,6 @@ add_executable(qa_howto_compare_vector_cci qa_howto_compare_vector_cci.cc)
 target_link_libraries(qa_howto_compare_vector_cci gnuradio-howto ${Boost_LIBRARIES})
 GR_ADD_TEST(qa_howto_compare_vector_cci qa_howto_compare_vector_cci)
 
-add_executable(qa_howto_square2_ff qa_howto_square2_ff.cc)
-target_link_libraries(qa_howto_square2_ff gnuradio-howto ${Boost_LIBRARIES})
-GR_ADD_TEST(qa_howto_square2_ff qa_howto_square2_ff)
+add_executable(qa_howto_vector_source2 qa_howto_vector_source2.cc)
+target_link_libraries(qa_howto_vector_source2 gnuradio-howto ${Boost_LIBRARIES})
+GR_ADD_TEST(qa_howto_vector_source2 qa_howto_vector_source2)

@@ -71,6 +71,7 @@ swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.o.provides.build: swig
 
 swig/howto_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gr_shared_ptr.i
 swig/howto_swigPYTHON_wrap.cxx: /usr/local/include/gruel/swig/gruel_common.i
+swig/howto_swigPYTHON_wrap.cxx: swig/howto_swig_doc.i
 swig/howto_swigPYTHON_wrap.cxx: ../swig/howto_swig.i
 swig/howto_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gnuradio.i
 swig/howto_swigPYTHON_wrap.cxx: swig/howto_swig.tag
@@ -82,23 +83,23 @@ swig/howto_swigPYTHON_wrap.cxx: ../swig/howto_swig.i
 
 swig/howto_swig.py: swig/howto_swigPYTHON_wrap.cxx
 
+swig/howto_swig_doc.i: ../swig/../include/howto_compare_vector_cci.h
+swig/howto_swig_doc.i: ../swig/../include/howto_vector_source2.h
+swig/howto_swig_doc.i: ../swig/../include/howto_api.h
+swig/howto_swig_doc.i: swig/howto_swig_doc_swig_docs/xml/index.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating howto_swig_doc.i"
+	cd /home/zitouni/git/workspace/gr_compare_vector/docs/doxygen && /usr/bin/python -B /home/zitouni/git/workspace/gr_compare_vector/docs/doxygen/swig_doc.py /home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_swig_doc_swig_docs/xml /home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_swig_doc.i
+
 swig/howto_swig.tag: swig/howto_swig_doc.i
 swig/howto_swig.tag: swig/_howto_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating howto_swig.tag"
 	cd /home/zitouni/git/workspace/gr_compare_vector/build/swig && ./_howto_swig_swig_tag
 	cd /home/zitouni/git/workspace/gr_compare_vector/build/swig && /usr/bin/cmake -E touch /home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_swig.tag
 
-swig/howto_swig_doc.i: ../swig/../include/howto_compare_vector_cci.h
-swig/howto_swig_doc.i: ../swig/../include/howto_square2_ff.h
-swig/howto_swig_doc.i: ../swig/../include/howto_api.h
-swig/howto_swig_doc.i: swig/howto_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating howto_swig_doc.i"
-	cd /home/zitouni/git/workspace/gr_compare_vector/docs/doxygen && /usr/bin/python -B /home/zitouni/git/workspace/gr_compare_vector/docs/doxygen/swig_doc.py /home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_swig_doc_swig_docs/xml /home/zitouni/git/workspace/gr_compare_vector/build/swig/howto_swig_doc.i
-
 swig/howto_swig_doc_swig_docs/xml/index.xml: ../swig/../include/howto_compare_vector_cci.h
-swig/howto_swig_doc_swig_docs/xml/index.xml: ../swig/../include/howto_square2_ff.h
+swig/howto_swig_doc_swig_docs/xml/index.xml: ../swig/../include/howto_vector_source2.h
 swig/howto_swig_doc_swig_docs/xml/index.xml: ../swig/../include/howto_api.h
 swig/howto_swig_doc_swig_docs/xml/index.xml: swig/_howto_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles $(CMAKE_PROGRESS_5)
@@ -136,8 +137,8 @@ swig/CMakeFiles/_howto_swig.dir/clean:
 
 swig/CMakeFiles/_howto_swig.dir/depend: swig/howto_swigPYTHON_wrap.cxx
 swig/CMakeFiles/_howto_swig.dir/depend: swig/howto_swig.py
-swig/CMakeFiles/_howto_swig.dir/depend: swig/howto_swig.tag
 swig/CMakeFiles/_howto_swig.dir/depend: swig/howto_swig_doc.i
+swig/CMakeFiles/_howto_swig.dir/depend: swig/howto_swig.tag
 swig/CMakeFiles/_howto_swig.dir/depend: swig/howto_swig_doc_swig_docs/xml/index.xml
 	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zitouni/git/workspace/gr_compare_vector /home/zitouni/git/workspace/gr_compare_vector/swig /home/zitouni/git/workspace/gr_compare_vector/build /home/zitouni/git/workspace/gr_compare_vector/build/swig /home/zitouni/git/workspace/gr_compare_vector/build/swig/CMakeFiles/_howto_swig.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/_howto_swig.dir/depend

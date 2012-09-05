@@ -23,6 +23,6 @@
 install(FILES
     howto_api.h
     howto_compare_vector_cci.h
-    howto_square2_ff.h
+    howto_vector_source2.h
     DESTINATION include/howto
 )

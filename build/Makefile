@@ -186,17 +186,17 @@ qa_howto_compare_vector_cci/fast:
 .PHONY : qa_howto_compare_vector_cci/fast
 
 #=============================================================================
-# Target rules for targets named qa_howto_square2_ff
+# Target rules for targets named qa_howto_vector_source2
 
 # Build rule for target.
-qa_howto_square2_ff: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 qa_howto_square2_ff
-.PHONY : qa_howto_square2_ff
+qa_howto_vector_source2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 qa_howto_vector_source2
+.PHONY : qa_howto_vector_source2
 
 # fast build rule for target.
-qa_howto_square2_ff/fast:
-	$(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/build
-.PHONY : qa_howto_square2_ff/fast
+qa_howto_vector_source2/fast:
+	$(MAKE) -f lib/CMakeFiles/qa_howto_vector_source2.dir/build.make lib/CMakeFiles/qa_howto_vector_source2.dir/build
+.PHONY : qa_howto_vector_source2/fast
 
 #=============================================================================
 # Target rules for targets named _howto_swig
@@ -292,7 +292,7 @@ help:
 	@echo "... uninstall"
 	@echo "... gnuradio-howto"
 	@echo "... qa_howto_compare_vector_cci"
-	@echo "... qa_howto_square2_ff"
+	@echo "... qa_howto_vector_source2"
 	@echo "... _howto_swig"
 	@echo "... _howto_swig_doc_tag"
 	@echo "... _howto_swig_swig_tag"

@@ -175,18 +175,18 @@ qa_howto_compare_vector_cci/fast:
 .PHONY : qa_howto_compare_vector_cci/fast
 
 # Convenience name for target.
-lib/CMakeFiles/qa_howto_square2_ff.dir/rule:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/qa_howto_square2_ff.dir/rule
-.PHONY : lib/CMakeFiles/qa_howto_square2_ff.dir/rule
+lib/CMakeFiles/qa_howto_vector_source2.dir/rule:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/qa_howto_vector_source2.dir/rule
+.PHONY : lib/CMakeFiles/qa_howto_vector_source2.dir/rule
 
 # Convenience name for target.
-qa_howto_square2_ff: lib/CMakeFiles/qa_howto_square2_ff.dir/rule
-.PHONY : qa_howto_square2_ff
+qa_howto_vector_source2: lib/CMakeFiles/qa_howto_vector_source2.dir/rule
+.PHONY : qa_howto_vector_source2
 
 # fast build rule for target.
-qa_howto_square2_ff/fast:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/build
-.PHONY : qa_howto_square2_ff/fast
+qa_howto_vector_source2/fast:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_vector_source2.dir/build.make lib/CMakeFiles/qa_howto_vector_source2.dir/build
+.PHONY : qa_howto_vector_source2/fast
 
 howto_compare_vector_cci.o: howto_compare_vector_cci.cc.o
 .PHONY : howto_compare_vector_cci.o
@@ -212,29 +212,29 @@ howto_compare_vector_cci.cc.s:
 	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_compare_vector_cci.cc.s
 .PHONY : howto_compare_vector_cci.cc.s
 
-howto_square2_ff.o: howto_square2_ff.cc.o
-.PHONY : howto_square2_ff.o
+howto_vector_source2.o: howto_vector_source2.cc.o
+.PHONY : howto_vector_source2.o
 
 # target to build an object file
-howto_square2_ff.cc.o:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.o
-.PHONY : howto_square2_ff.cc.o
+howto_vector_source2.cc.o:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_vector_source2.cc.o
+.PHONY : howto_vector_source2.cc.o
 
-howto_square2_ff.i: howto_square2_ff.cc.i
-.PHONY : howto_square2_ff.i
+howto_vector_source2.i: howto_vector_source2.cc.i
+.PHONY : howto_vector_source2.i
 
 # target to preprocess a source file
-howto_square2_ff.cc.i:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.i
-.PHONY : howto_square2_ff.cc.i
+howto_vector_source2.cc.i:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_vector_source2.cc.i
+.PHONY : howto_vector_source2.cc.i
 
-howto_square2_ff.s: howto_square2_ff.cc.s
-.PHONY : howto_square2_ff.s
+howto_vector_source2.s: howto_vector_source2.cc.s
+.PHONY : howto_vector_source2.s
 
 # target to generate assembly for a file
-howto_square2_ff.cc.s:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_square2_ff.cc.s
-.PHONY : howto_square2_ff.cc.s
+howto_vector_source2.cc.s:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/howto_vector_source2.cc.s
+.PHONY : howto_vector_source2.cc.s
 
 qa_howto_compare_vector_cci.o: qa_howto_compare_vector_cci.cc.o
 .PHONY : qa_howto_compare_vector_cci.o
@@ -260,29 +260,29 @@ qa_howto_compare_vector_cci.cc.s:
 	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_compare_vector_cci.dir/build.make lib/CMakeFiles/qa_howto_compare_vector_cci.dir/qa_howto_compare_vector_cci.cc.s
 .PHONY : qa_howto_compare_vector_cci.cc.s
 
-qa_howto_square2_ff.o: qa_howto_square2_ff.cc.o
-.PHONY : qa_howto_square2_ff.o
+qa_howto_vector_source2.o: qa_howto_vector_source2.cc.o
+.PHONY : qa_howto_vector_source2.o
 
 # target to build an object file
-qa_howto_square2_ff.cc.o:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.o
-.PHONY : qa_howto_square2_ff.cc.o
+qa_howto_vector_source2.cc.o:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_vector_source2.dir/build.make lib/CMakeFiles/qa_howto_vector_source2.dir/qa_howto_vector_source2.cc.o
+.PHONY : qa_howto_vector_source2.cc.o
 
-qa_howto_square2_ff.i: qa_howto_square2_ff.cc.i
-.PHONY : qa_howto_square2_ff.i
+qa_howto_vector_source2.i: qa_howto_vector_source2.cc.i
+.PHONY : qa_howto_vector_source2.i
 
 # target to preprocess a source file
-qa_howto_square2_ff.cc.i:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.i
-.PHONY : qa_howto_square2_ff.cc.i
+qa_howto_vector_source2.cc.i:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_vector_source2.dir/build.make lib/CMakeFiles/qa_howto_vector_source2.dir/qa_howto_vector_source2.cc.i
+.PHONY : qa_howto_vector_source2.cc.i
 
-qa_howto_square2_ff.s: qa_howto_square2_ff.cc.s
-.PHONY : qa_howto_square2_ff.s
+qa_howto_vector_source2.s: qa_howto_vector_source2.cc.s
+.PHONY : qa_howto_vector_source2.s
 
 # target to generate assembly for a file
-qa_howto_square2_ff.cc.s:
-	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_square2_ff.dir/build.make lib/CMakeFiles/qa_howto_square2_ff.dir/qa_howto_square2_ff.cc.s
-.PHONY : qa_howto_square2_ff.cc.s
+qa_howto_vector_source2.cc.s:
+	cd /home/zitouni/git/workspace/gr_compare_vector/build && $(MAKE) -f lib/CMakeFiles/qa_howto_vector_source2.dir/build.make lib/CMakeFiles/qa_howto_vector_source2.dir/qa_howto_vector_source2.cc.s
+.PHONY : qa_howto_vector_source2.cc.s
 
 # Help Target
 help:
@@ -297,21 +297,21 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... qa_howto_compare_vector_cci"
-	@echo "... qa_howto_square2_ff"
+	@echo "... qa_howto_vector_source2"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... howto_compare_vector_cci.o"
 	@echo "... howto_compare_vector_cci.i"
 	@echo "... howto_compare_vector_cci.s"
-	@echo "... howto_square2_ff.o"
-	@echo "... howto_square2_ff.i"
-	@echo "... howto_square2_ff.s"
+	@echo "... howto_vector_source2.o"
+	@echo "... howto_vector_source2.i"
+	@echo "... howto_vector_source2.s"
 	@echo "... qa_howto_compare_vector_cci.o"
 	@echo "... qa_howto_compare_vector_cci.i"
 	@echo "... qa_howto_compare_vector_cci.s"
-	@echo "... qa_howto_square2_ff.o"
-	@echo "... qa_howto_square2_ff.i"
-	@echo "... qa_howto_square2_ff.s"
+	@echo "... qa_howto_vector_source2.o"
+	@echo "... qa_howto_vector_source2.i"
+	@echo "... qa_howto_vector_source2.s"
 .PHONY : help
 
 

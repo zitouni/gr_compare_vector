@@ -36,7 +36,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/howto" TYPE FILE FILES
     "/home/zitouni/git/workspace/gr_compare_vector/include/howto_api.h"
     "/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h"
-    "/home/zitouni/git/workspace/gr_compare_vector/include/howto_square2_ff.h"
+    "/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
