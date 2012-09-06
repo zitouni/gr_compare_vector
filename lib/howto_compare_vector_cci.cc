@@ -85,6 +85,10 @@ howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned c
 	d_preamble_size = d_preamble.size();
 
 
+	number_bits_preamble =0;
+	number_bits_data =0;
+
+
 	//printf("the size of the data vector is : %d \n",  int(d_data.size()));
 	for (int offset=0; offset < d_data.size(); offset++ ){
 		  if (d_data[offset] == 1)
@@ -93,7 +97,7 @@ howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned c
 			  d_vector_reg = d_vector_reg << 1;
 	}
 
-	printf("the size of the preamble vector is : %d \n",  int(d_preamble.size()));
+	//printf("the size of the preamble vector is : %d \n",  int(d_preamble.size()));
 	for (int offset=0; offset < d_preamble.size(); offset++ ){
 		  if (d_preamble[offset] == 1)
 			  d_preamble_reg = (d_preamble_reg << 1) | 1;
@@ -124,8 +128,8 @@ howto_compare_vector_cci::general_work (int noutput_items,
 
   unsigned int size = d_data.size() + d_preamble.size();
 
-  unsigned int number_bits_preamble =0;
-  unsigned int number_bits_data =0;
+  unsigned int preamble_not_found = 0;
+  unsigned int data_not_found = 0;
 
   //printf("number of noutput_items %d \n", noutput_items);
   for (int i = 0; i < noutput_items; i++){
@@ -136,6 +140,8 @@ howto_compare_vector_cci::general_work (int noutput_items,
 		  //nbr_bits_usrp++;
 		  //number_bits =0;
 	  //}else{
+	      //printf("le i numéro : %d de in[i]: %d\n", i, in[i]);
+
 	      if (preamble_received)
 	    	  number_bits_data ++;
 	      else
@@ -153,18 +159,20 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			//compare shift_reg constructed to that of preamble reg
 			//printf("d_shift_reg : %d d_preamble_reg: %d\n", d_shift_reg, d_preamble_reg);
 			preamble_received = is_same_vector(d_shift_reg, d_preamble_reg);
-			printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 
 			if (preamble_received){
-			  printf("******************Preamble is received *************** : %d******* valeur %d\n", number_bits_preamble, d_shift_reg);
-			  data_received = false;
+			  //printf("******************Preamble is received *************** : %d******* valeur %d\n", number_bits_preamble, d_shift_reg);
+			  //printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 			  //exit(1);
 			  //number_bits = 1;
+			}else{
+				//printf("PREAMBLE not found \n");
+				preamble_not_found++;
+				//printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 			}
 
 			 number_bits_preamble = 0;
 			 d_shift_reg = 0;
-
 		   }
 
 			  //}
@@ -176,26 +184,41 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			  //printf("***************\n");
 
 			  data_received = is_same_vector(d_shift_reg, d_vector_reg);
-			  printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 
 			  if (data_received){
-			      printf("******************Data is received *************** : %d******* valeur %d\n", number_bits_data, d_shift_reg);
-			      is_same_vector_number++;
-			      preamble_received = false;
+			      //printf("******************Data is received *************** : %d******* valeur %d\n", number_bits_data, d_shift_reg);
+			      //printf("valeur de d_shift_reg: %d \n", d_shift_reg );
+			      //printf("nombre de vecteur trouve : %d le d_iteration_data_reg is : %d \n", is_same_vector_number, d_iteration_data_reg);
+			      is_same_vector_number+=1;
 			  }else{
+				  //printf("DATA not found \n");
+				  //data_not_found++;
+				  //printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 				  is_same_vector_number =0;
 			  }
 
+			  preamble_received = false;
+
 			  number_bits_data = 0;
 			  d_shift_reg = 0;
-
-
 		  }
 
-		  if (is_same_vector_number == (d_iteration_data_reg - 1)){
-			 is_same_vector_number =0;
+		  if (is_same_vector_number >= d_iteration_data_reg){
+		     //printf("nombre de vecteur trouve : %d le d_iteration_data_reg is : %d \n", is_same_vector_number, d_iteration_data_reg);
 			 exit(1);
+			 is_same_vector_number =0;
 		  }
+
+//		  if(data_not_found >= 5){
+//			  printf("data not found : %d\n", data_not_found);
+//			  exit(0);
+//		  }
+
+
+//		  if(preamble_not_found >= 10){
+//			  printf("preamble not found : %d\n ", preamble_not_found);
+//			  exit(0);
+//		  }
 
 	   out[i] = in[i];
   }
@@ -225,10 +248,9 @@ bool howto_compare_vector_cci::is_same_vector(int d_shift_reg, int d_vector_reg)
 	//printf("********Begin is same vector function \n");
 	//printf("valeur de count error is : %d \n", count_error);
 	//printf("valeur de d_shift_reg: %d \n", d_shift_reg );
-	if (count_error < d_min_threshold_error){
+	if (count_error <= d_min_threshold_error){
 		//printf("*Yes, Value is equal \n");
 		is_same_vector_value = true;
-		is_same_vector_number ++;
 		//printf("valeur de d_vector_reg: %d \n", d_vector_reg );
 		//printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 		//printf("Number of vectors found  %d \n",is_same_vector_number);

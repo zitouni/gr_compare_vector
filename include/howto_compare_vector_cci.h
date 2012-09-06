@@ -84,6 +84,9 @@ private:
   int 						number_bits;
   int 						nbr_initial_bits_usrp;
 
+  int 						number_bits_preamble;
+  int 						number_bits_data;
+
   bool preamble_received;
   bool data_received;
 

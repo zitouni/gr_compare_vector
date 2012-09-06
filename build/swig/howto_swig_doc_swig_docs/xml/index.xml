@@ -105,6 +105,8 @@
     <member refid="classhowto__compare__vector__cci_1a31d0c2eafb85cc9f3b75fb858bf937a7" kind="variable"><name>d_preamble_size</name></member>
     <member refid="classhowto__compare__vector__cci_1afbad328860d580453d84fc5143621cf4" kind="variable"><name>number_bits</name></member>
     <member refid="classhowto__compare__vector__cci_1ac6e28fb57c1c0607fe95b171577af5ca" kind="variable"><name>nbr_initial_bits_usrp</name></member>
+    <member refid="classhowto__compare__vector__cci_1ad55e6b5705e5e93e362d13a76003164b" kind="variable"><name>number_bits_preamble</name></member>
+    <member refid="classhowto__compare__vector__cci_1a07eadeafa1c932608e45fc97e2ef012b" kind="variable"><name>number_bits_data</name></member>
     <member refid="classhowto__compare__vector__cci_1a19e8ee9512800f57a34a59a183e815be" kind="variable"><name>preamble_received</name></member>
     <member refid="classhowto__compare__vector__cci_1a5c9959067314ecff89d2478cf070b4e1" kind="variable"><name>data_received</name></member>
     <member refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" kind="variable"><name>is_same_vector_value</name></member>

@@ -160,6 +160,32 @@
         </inbodydescription>
         <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="85" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="85" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classhowto__compare__vector__cci_1ad55e6b5705e5e93e362d13a76003164b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int howto_compare_vector_cci::number_bits_preamble</definition>
+        <argsstring></argsstring>
+        <name>number_bits_preamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="87" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhowto__compare__vector__cci_1a07eadeafa1c932608e45fc97e2ef012b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int howto_compare_vector_cci::number_bits_data</definition>
+        <argsstring></argsstring>
+        <name>number_bits_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="88" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classhowto__compare__vector__cci_1a19e8ee9512800f57a34a59a183e815be" prot="private" static="no" mutable="no">
         <type>bool</type>
         <definition>bool howto_compare_vector_cci::preamble_received</definition>
@@ -171,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="87" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="87" bodyend="-1"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="90" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhowto__compare__vector__cci_1a5c9959067314ecff89d2478cf070b4e1" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -184,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="88" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="88" bodyend="-1"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="91" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="91" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -199,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="97" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="97" bodyend="-1"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="100" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -212,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="98" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="98" bodyend="-1"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="101" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -297,7 +323,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="92"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="95"/>
       </memberdef>
       <memberdef kind="function" id="classhowto__compare__vector__cci_1abf69ef7d610406db881c088e83a18ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -318,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="96"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="99"/>
       </memberdef>
       <memberdef kind="function" id="classhowto__compare__vector__cci_1a566f6c3f640c2be7db626c551607618d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -347,7 +373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="105"/>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="108"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -355,7 +381,7 @@
     <detaileddescription>
 <para><simplesect kind="see"><para>howto_square2_ff for a version that subclasses gr_sync_block. </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="62" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="61" bodyend="106"/>
+    <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" line="62" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_compare_vector_cci.h" bodystart="61" bodyend="109"/>
     <listofallmembers>
       <member refid="classhowto__compare__vector__cci_1a22a6a6cf3694719aea983f0d185f0fd0" prot="private" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>d_data</name></member>
       <member refid="classhowto__compare__vector__cci_1af63db959413ccecd0785de3fabb96960" prot="private" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>d_iteration_data_reg</name></member>
@@ -376,6 +402,8 @@
       <member refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" prot="public" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>is_same_vector_value</name></member>
       <member refid="classhowto__compare__vector__cci_1ac6e28fb57c1c0607fe95b171577af5ca" prot="private" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>nbr_initial_bits_usrp</name></member>
       <member refid="classhowto__compare__vector__cci_1afbad328860d580453d84fc5143621cf4" prot="private" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>number_bits</name></member>
+      <member refid="classhowto__compare__vector__cci_1a07eadeafa1c932608e45fc97e2ef012b" prot="private" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>number_bits_data</name></member>
+      <member refid="classhowto__compare__vector__cci_1ad55e6b5705e5e93e362d13a76003164b" prot="private" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>number_bits_preamble</name></member>
       <member refid="classhowto__compare__vector__cci_1a19e8ee9512800f57a34a59a183e815be" prot="private" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>preamble_received</name></member>
       <member refid="classhowto__compare__vector__cci_1ab32ebee21b7f153b2117f6cbad90b1b8" prot="public" virt="non-virtual"><scope>howto_compare_vector_cci</scope><name>~howto_compare_vector_cci</name></member>
     </listofallmembers>
