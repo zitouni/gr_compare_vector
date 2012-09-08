@@ -78,6 +78,8 @@ howto_compare_vector_cci::howto_compare_vector_cci (const std::vector<unsigned c
 	d_vector_reg = 0;
 
 	is_same_vector_number = 0;
+	is_same_vector_decision = false;
+
 	number_bits = 0;
 	d_preamble_reg = 0;
 
@@ -168,6 +170,7 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			}else{
 				//printf("PREAMBLE not found \n");
 				preamble_not_found++;
+				is_same_vector_decision = false;
 				//printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 			}
 
@@ -195,6 +198,7 @@ howto_compare_vector_cci::general_work (int noutput_items,
 				  //data_not_found++;
 				  //printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 				  is_same_vector_number =0;
+				  is_same_vector_decision = false;
 			  }
 
 			  preamble_received = false;
@@ -205,8 +209,10 @@ howto_compare_vector_cci::general_work (int noutput_items,
 
 		  if (is_same_vector_number >= d_iteration_data_reg){
 		     //printf("nombre de vecteur trouve : %d le d_iteration_data_reg is : %d \n", is_same_vector_number, d_iteration_data_reg);
-			 exit(1);
-			 is_same_vector_number =0;
+			 is_same_vector_decision = true;
+			 is_same_vector_number = 0;
+			 //exit(1);
+
 		  }
 
 //		  if(data_not_found >= 5){
@@ -241,6 +247,8 @@ bool howto_compare_vector_cci::is_same_vector(int d_shift_reg, int d_vector_reg)
 
     int count_error = 0;
 
+    bool same_vector = false;
+
 	for (int i = 0; i < d_size; i++)
 		if (exclusive & (1<<i)){
 			count_error++;
@@ -250,16 +258,22 @@ bool howto_compare_vector_cci::is_same_vector(int d_shift_reg, int d_vector_reg)
 	//printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 	if (count_error <= d_min_threshold_error){
 		//printf("*Yes, Value is equal \n");
-		is_same_vector_value = true;
+		same_vector = true;
 		//printf("valeur de d_vector_reg: %d \n", d_vector_reg );
 		//printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 		//printf("Number of vectors found  %d \n",is_same_vector_number);
 	}
 	else{
-		is_same_vector_value = false;
+		same_vector = false;
 	}
 	//printf("********End is same vector function \n");
 
-	return is_same_vector_value;
+	return same_vector;
 }
 
+bool howto_compare_vector_cci::compare_vector_decision(){
+   if (is_same_vector_decision)
+	   return true;
+   else
+	   return false;
+}

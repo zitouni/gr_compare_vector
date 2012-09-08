@@ -97,7 +97,9 @@ private:
 
   //function to return the boolean indicate that there are a sequence eqaul to the d_data in the block
   bool is_same_vector(int d_shift_reg, int d_vector_reg);
-  bool is_same_vector_value;
+  bool compare_vector_decision();
+
+  bool is_same_vector_decision;
   int  is_same_vector_number;
 
   // Where all the action really happens

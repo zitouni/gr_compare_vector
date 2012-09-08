@@ -109,12 +109,13 @@
     <member refid="classhowto__compare__vector__cci_1a07eadeafa1c932608e45fc97e2ef012b" kind="variable"><name>number_bits_data</name></member>
     <member refid="classhowto__compare__vector__cci_1a19e8ee9512800f57a34a59a183e815be" kind="variable"><name>preamble_received</name></member>
     <member refid="classhowto__compare__vector__cci_1a5c9959067314ecff89d2478cf070b4e1" kind="variable"><name>data_received</name></member>
-    <member refid="classhowto__compare__vector__cci_1a9d398ab70f3d4dd9c466be4522a9f4f9" kind="variable"><name>is_same_vector_value</name></member>
+    <member refid="classhowto__compare__vector__cci_1afa75d8e2ff41862020d59f514107e3c7" kind="variable"><name>is_same_vector_decision</name></member>
     <member refid="classhowto__compare__vector__cci_1a3a2d319e3c73cf8c7b94f2d182ddf702" kind="variable"><name>is_same_vector_number</name></member>
     <member refid="classhowto__compare__vector__cci_1a20488f7b2ad31a36cc92e36b47a2a2a6" kind="friend"><name>howto_make_compare_vector_cci</name></member>
     <member refid="classhowto__compare__vector__cci_1a011d79a88d6965343b64c2055dcb8eac" kind="function"><name>howto_compare_vector_cci</name></member>
     <member refid="classhowto__compare__vector__cci_1ab32ebee21b7f153b2117f6cbad90b1b8" kind="function"><name>~howto_compare_vector_cci</name></member>
     <member refid="classhowto__compare__vector__cci_1abf69ef7d610406db881c088e83a18ea2" kind="function"><name>is_same_vector</name></member>
+    <member refid="classhowto__compare__vector__cci_1a5118b3382232f2074476ac8ac93726dc" kind="function"><name>compare_vector_decision</name></member>
     <member refid="classhowto__compare__vector__cci_1a566f6c3f640c2be7db626c551607618d" kind="function"><name>general_work</name></member>
   </compound>
   <compound refid="classhowto__vector__source2" kind="class"><name>howto_vector_source2</name>

@@ -26,6 +26,10 @@ Params: (NONE)"
 
 Params: (d_shift_reg, d_vector_reg)"
 
+%feature("docstring") howto_compare_vector_cci::compare_vector_decision "
+
+Params: (NONE)"
+
 %feature("docstring") howto_compare_vector_cci::general_work "
 
 Params: (noutput_items, ninput_items, input_items, output_items)"

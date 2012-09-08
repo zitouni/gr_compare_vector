@@ -181,7 +181,15 @@ class howto_compare_vector_cci_sptr(object):
         """
         return _howto_swig.howto_compare_vector_cci_sptr_is_same_vector(self, *args, **kwargs)
 
-    is_same_vector_value = _swig_property(_howto_swig.howto_compare_vector_cci_sptr_is_same_vector_value_get, _howto_swig.howto_compare_vector_cci_sptr_is_same_vector_value_set)
+    def compare_vector_decision(self):
+        """
+        compare_vector_decision(self) -> bool
+
+        Params: (NONE)
+        """
+        return _howto_swig.howto_compare_vector_cci_sptr_compare_vector_decision(self)
+
+    is_same_vector_decision = _swig_property(_howto_swig.howto_compare_vector_cci_sptr_is_same_vector_decision_get, _howto_swig.howto_compare_vector_cci_sptr_is_same_vector_decision_set)
     is_same_vector_number = _swig_property(_howto_swig.howto_compare_vector_cci_sptr_is_same_vector_number_get, _howto_swig.howto_compare_vector_cci_sptr_is_same_vector_number_set)
     def general_work(self, *args, **kwargs):
         """

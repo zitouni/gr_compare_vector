@@ -5806,7 +5806,40 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_value_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_compare_vector_decision(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_compare_vector_decision",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_compare_vector_decision" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->compare_vector_decision();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_decision_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
   bool arg2 ;
@@ -5817,20 +5850,20 @@ SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_value_se
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_value_set",2,2,&obj0,&obj1)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_decision_set",2,2,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_value_set" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_decision_set" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
   ecode2 = SWIG_AsVal_bool(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_value_set" "', argument " "2"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_decision_set" "', argument " "2"" of type '" "bool""'");
   } 
   arg2 = static_cast< bool >(val2);
   {
     try {
-      if (arg1) (*arg1)->is_same_vector_value = arg2;
+      if (arg1) (*arg1)->is_same_vector_decision = arg2;
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5847,7 +5880,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_value_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_decision_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   boost::shared_ptr< howto_compare_vector_cci > *arg1 = (boost::shared_ptr< howto_compare_vector_cci > *) 0 ;
   void *argp1 = 0 ;
@@ -5855,15 +5888,15 @@ SWIGINTERN PyObject *_wrap_howto_compare_vector_cci_sptr_is_same_vector_value_ge
   PyObject * obj0 = 0 ;
   bool result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_value_get",1,1,&obj0)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"howto_compare_vector_cci_sptr_is_same_vector_decision_get",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_howto_compare_vector_cci_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_value_get" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "howto_compare_vector_cci_sptr_is_same_vector_decision_get" "', argument " "1"" of type '" "boost::shared_ptr< howto_compare_vector_cci > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< howto_compare_vector_cci > * >(argp1);
   {
     try {
-      result = (bool) ((*arg1)->is_same_vector_value);
+      result = (bool) ((*arg1)->is_same_vector_decision);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -7683,8 +7716,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"Params: (d_shift_reg, d_vector_reg)\n"
 		""},
-	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_set", _wrap_howto_compare_vector_cci_sptr_is_same_vector_value_set, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_set(howto_compare_vector_cci_sptr self, bool is_same_vector_value)"},
-	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_get", _wrap_howto_compare_vector_cci_sptr_is_same_vector_value_get, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_value_get(howto_compare_vector_cci_sptr self) -> bool"},
+	 { (char *)"howto_compare_vector_cci_sptr_compare_vector_decision", _wrap_howto_compare_vector_cci_sptr_compare_vector_decision, METH_VARARGS, (char *)"\n"
+		"howto_compare_vector_cci_sptr_compare_vector_decision(howto_compare_vector_cci_sptr self) -> bool\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_decision_set", _wrap_howto_compare_vector_cci_sptr_is_same_vector_decision_set, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_decision_set(howto_compare_vector_cci_sptr self, bool is_same_vector_decision)"},
+	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_decision_get", _wrap_howto_compare_vector_cci_sptr_is_same_vector_decision_get, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_decision_get(howto_compare_vector_cci_sptr self) -> bool"},
 	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_set", _wrap_howto_compare_vector_cci_sptr_is_same_vector_number_set, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_set(howto_compare_vector_cci_sptr self, int is_same_vector_number)"},
 	 { (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_get", _wrap_howto_compare_vector_cci_sptr_is_same_vector_number_get, METH_VARARGS, (char *)"howto_compare_vector_cci_sptr_is_same_vector_number_get(howto_compare_vector_cci_sptr self) -> int"},
 	 { (char *)"howto_compare_vector_cci_sptr_general_work", (PyCFunction) _wrap_howto_compare_vector_cci_sptr_general_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"

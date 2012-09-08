@@ -26,7 +26,10 @@ howto_vector_source2_sptr howto_make_vector_source2 (const std::vector<unsigned 
 class howto_compare_vector_cci : public gr_block
 {
 public:
-  bool is_same_vector_value const;
+  %bool compare_vector_decision();
+  bool is_same_vector_decision const;
+  
+  int is_same_vector_number const; 
 };
 
 class howto_vector_source2 : public gr_sync_block {
