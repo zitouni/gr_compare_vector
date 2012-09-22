@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classhowto__vector__source2" kind="class" prot="public">
+    <compoundname>howto_vector_source2</compoundname>
+    <includes refid="howto__vector__source2_8h" local="no">howto_vector_source2.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhowto__vector__source2_1ab9b8b87ab2488b9b877f2c4006275fe8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; howto_vector_source2::d_data</definition>
+        <argsstring></argsstring>
+        <name>d_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="66" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhowto__vector__source2_1af72663bfc0f80760add37d7b71a06d19" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; howto_vector_source2::d_preamble</definition>
+        <argsstring></argsstring>
+        <name>d_preamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="67" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhowto__vector__source2_1a205012768d273040f52479e0abe31572" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool howto_vector_source2::d_with_preamble</definition>
+        <argsstring></argsstring>
+        <name>d_with_preamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="69" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhowto__vector__source2_1a7e1d56cf94060b4119aa680c924805bf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool howto_vector_source2::d_repeat</definition>
+        <argsstring></argsstring>
+        <name>d_repeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="70" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhowto__vector__source2_1adb845336e5d3e7aba0462924d3967d9b" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int howto_vector_source2::d_offset</definition>
+        <argsstring></argsstring>
+        <name>d_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="71" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhowto__vector__source2_1a638f575036a1308109235e88b8557660" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int howto_vector_source2::d_offset_preamble</definition>
+        <argsstring></argsstring>
+        <name>d_offset_preamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="72" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhowto__vector__source2_1a5ca1d28f4c41651e54d77ef34b8df572" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int howto_vector_source2::d_vlen</definition>
+        <argsstring></argsstring>
+        <name>d_vlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="73" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classhowto__vector__source2_1a04ac26c4e4ef32d4bc168e58ac955970" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="howto__vector__source2_8h_1abb75b6f39880e4baec7c9dd9b67ab949" kindref="member">howto_vector_source2_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT howto_vector_source2_sptr howto_make_vector_source2</definition>
+        <argsstring>(const std::vector&lt; unsigned char &gt; &amp;data, const std::vector&lt; unsigned char &gt; &amp;preamble, bool with_preamble, bool repeat, int vlen)</argsstring>
+        <name>howto_make_vector_source2</name>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>preamble</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>with_preamble</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vlen</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classhowto__vector__source2" kindref="compound">howto_vector_source2</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classhowto__vector__source2" kindref="compound">howto_vector_source2</ref>&apos;s constructor is private. howto_make_vector_source2 is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhowto__vector__source2_1ac18c23e036e1476737989eb07566e0a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>howto_vector_source2::howto_vector_source2</definition>
+        <argsstring>(const std::vector&lt; unsigned char &gt; &amp;data, const std::vector&lt; unsigned char &gt; &amp;preamble, bool with_preamble, bool repeat, int vlen)</argsstring>
+        <name>howto_vector_source2</name>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>preamble</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>with_preamble</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhowto__vector__source2_1a350308ca536043b86bee9f4865c46d00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>howto_vector_source2::~howto_vector_source2</definition>
+        <argsstring>()</argsstring>
+        <name>~howto_vector_source2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classhowto__vector__source2_1aa42e19548d28f37a86ec01680a177fb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void howto_vector_source2::rewind</definition>
+        <argsstring>()</argsstring>
+        <name>rewind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="81" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classhowto__vector__source2_1a4ea24fca11208fc4befd54511431a236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int howto_vector_source2::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classhowto__vector__source2_1a74fbcd14ed3a6826c82a67a55aee9a88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void howto_vector_source2::set_data</definition>
+        <argsstring>(const std::vector&lt; unsigned char &gt; &amp;data)</argsstring>
+        <name>set_data</name>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="87" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>square2 a stream of floats.</para><para>This uses the preferred technique: subclassing gr_sync_block. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" line="59" bodyfile="/home/zitouni/git/workspace/gr_compare_vector/include/howto_vector_source2.h" bodystart="58" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classhowto__vector__source2_1ab9b8b87ab2488b9b877f2c4006275fe8" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>d_data</name></member>
+      <member refid="classhowto__vector__source2_1adb845336e5d3e7aba0462924d3967d9b" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>d_offset</name></member>
+      <member refid="classhowto__vector__source2_1a638f575036a1308109235e88b8557660" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>d_offset_preamble</name></member>
+      <member refid="classhowto__vector__source2_1af72663bfc0f80760add37d7b71a06d19" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>d_preamble</name></member>
+      <member refid="classhowto__vector__source2_1a7e1d56cf94060b4119aa680c924805bf" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>d_repeat</name></member>
+      <member refid="classhowto__vector__source2_1a5ca1d28f4c41651e54d77ef34b8df572" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>d_vlen</name></member>
+      <member refid="classhowto__vector__source2_1a205012768d273040f52479e0abe31572" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>d_with_preamble</name></member>
+      <member refid="classhowto__vector__source2_1a04ac26c4e4ef32d4bc168e58ac955970" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>howto_make_vector_source2</name></member>
+      <member refid="classhowto__vector__source2_1ac18c23e036e1476737989eb07566e0a0" prot="private" virt="non-virtual"><scope>howto_vector_source2</scope><name>howto_vector_source2</name></member>
+      <member refid="classhowto__vector__source2_1aa42e19548d28f37a86ec01680a177fb7" prot="public" virt="non-virtual"><scope>howto_vector_source2</scope><name>rewind</name></member>
+      <member refid="classhowto__vector__source2_1a74fbcd14ed3a6826c82a67a55aee9a88" prot="public" virt="non-virtual"><scope>howto_vector_source2</scope><name>set_data</name></member>
+      <member refid="classhowto__vector__source2_1a4ea24fca11208fc4befd54511431a236" prot="public" virt="non-virtual"><scope>howto_vector_source2</scope><name>work</name></member>
+      <member refid="classhowto__vector__source2_1a350308ca536043b86bee9f4865c46d00" prot="public" virt="non-virtual"><scope>howto_vector_source2</scope><name>~howto_vector_source2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

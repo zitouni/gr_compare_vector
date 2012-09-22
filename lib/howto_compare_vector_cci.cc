@@ -171,6 +171,7 @@ howto_compare_vector_cci::general_work (int noutput_items,
 				//printf("PREAMBLE not found \n");
 				preamble_not_found++;
 				is_same_vector_decision = false;
+				is_same_vector_number = 0;
 				//printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 			}
 

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<block>
+  <name>Vector Source 2</name>
+  <key>howto_vector_source2</key>
+  <category>HOWTO</category>
+  <import>import howto</import>
+  <make>howto.vector_source2($vector, $preamble, $with_preamble, $repeat, $vlen)</make>
+    <param>
+		<name>Output Type</name>
+		<key>type</key>
+		<type>enum</type>
+		
+		<option>
+			<name>Byte</name>
+			<key>byte</key>
+			<opt>fcn:b</opt>
+			<opt>vec_type:int_vector</opt>
+		</option>	
+	</param>
+	
+	<param>
+		<name>Vector</name>
+		<key>vector</key>
+		<value>0, 0, 0</value>
+		<type>$type.vec_type</type>
+	</param>
+	
+	<param>
+		<name>Preamble</name>
+		<key>preamble</key>
+		<value>0, 0, 0</value>
+		<type>$type.vec_type</type>
+	</param>
+	
+	<param>
+		<name>With preamble</name>
+		<key>with_preamble</key>
+		<value>False</value>
+		<type>enum</type>
+		<option>
+			<name>Yes</name>
+			<key>True</key>
+		</option>
+		<option>
+			<name>No</name>
+			<key>False</key>
+		</option>
+	</param>
+	<param>
+		<name>Repeat</name>
+		<key>repeat</key>
+		<value>True</value>
+		<type>enum</type>
+		<option>
+			<name>Yes</name>
+			<key>True</key>
+		</option>
+		<option>
+			<name>No</name>
+			<key>False</key>
+		</option>
+	</param>
+	<param>
+		<name>Vec Length</name>
+		<key>vlen</key>
+		<value>1</value>
+		<type>int</type>
+	</param>
+	<check>$vlen &gt; 0</check>
+	<source>
+		<name>out</name>
+		<type>$type</type>
+		<vlen>$vlen</vlen>
+	</source>
+</block>
