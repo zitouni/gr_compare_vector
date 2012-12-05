@@ -114,14 +114,14 @@ howto_vector_source2::work (int noutput_items,
       if (d_with_preamble){
     	  if (preamble_offset <d_preamble.size()){
     		  //printf("d_preamble[%d] : %d \n", preamble_offset, d_preamble[preamble_offset]);
-    		  //optr[i] = d_preamble[preamble_offset++];
+    		  optr[i] = d_preamble[preamble_offset++];
     	      //memcpy(&out[i], &d_symbol_table[(unsigned int)(in[i/2]&0xF)], sizeof(unsigned int));
-    		  memcpy(&optr[i], &d_preamble[preamble_offset++], sizeof(unsigned char));
+    		  //memcpy(&optr[i], &d_preamble[preamble_offset++], sizeof(unsigned char));
     	  }else{
     		  if(data_offset < d_data.size()){
     		   	  //printf("d_data[%d] : %d \n", data_offset, d_data[data_offset]);
-    			  //optr[i] = d_data[data_offset++];
-    			  memcpy(&optr[i], &d_data[data_offset++], sizeof(unsigned char));
+    			  optr[i] = d_data[data_offset++];
+    			  //memcpy(&optr[i], &d_data[data_offset++], sizeof(unsigned char));
     		  }
 
     	  }

@@ -245,8 +245,8 @@ swig/preinstall:
 
 # All Build rule for target.
 swig/CMakeFiles/_howto_swig.dir/all: lib/CMakeFiles/gnuradio-howto.dir/all
-swig/CMakeFiles/_howto_swig.dir/all: swig/CMakeFiles/_howto_swig_swig_tag.dir/all
 swig/CMakeFiles/_howto_swig.dir/all: swig/CMakeFiles/_howto_swig_doc_tag.dir/all
+swig/CMakeFiles/_howto_swig.dir/all: swig/CMakeFiles/_howto_swig_swig_tag.dir/all
 	$(MAKE) -f swig/CMakeFiles/_howto_swig.dir/build.make swig/CMakeFiles/_howto_swig.dir/depend
 	$(MAKE) -f swig/CMakeFiles/_howto_swig.dir/build.make swig/CMakeFiles/_howto_swig.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles  1 2 3 4 5
@@ -351,8 +351,8 @@ clean: swig/CMakeFiles/_howto_swig_swig_tag.dir/clean
 # Target rules for target swig/CMakeFiles/pygen_swig_ce791.dir
 
 # All Build rule for target.
-swig/CMakeFiles/pygen_swig_ce791.dir/all: swig/CMakeFiles/_howto_swig_swig_tag.dir/all
 swig/CMakeFiles/pygen_swig_ce791.dir/all: swig/CMakeFiles/_howto_swig_doc_tag.dir/all
+swig/CMakeFiles/pygen_swig_ce791.dir/all: swig/CMakeFiles/_howto_swig_swig_tag.dir/all
 	$(MAKE) -f swig/CMakeFiles/pygen_swig_ce791.dir/build.make swig/CMakeFiles/pygen_swig_ce791.dir/depend
 	$(MAKE) -f swig/CMakeFiles/pygen_swig_ce791.dir/build.make swig/CMakeFiles/pygen_swig_ce791.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/zitouni/git/workspace/gr_compare_vector/build/CMakeFiles  13 14 15 16 17 18

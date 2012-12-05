@@ -10,24 +10,20 @@
 gruel/attributes.h
 -
 
-../include/howto_compare_vector_cci.h
+../include/howto_vector_source2.h
 howto_api.h
 -
-gr_block.h
+gr_sync_block.h
 -
 
-/home/zitouni/git/workspace/gr_compare_vector/lib/howto_compare_vector_cci.cc
+/home/zitouni/git/workspace/gr_compare_vector/lib/howto_vector_source2.cc
 config.h
 /home/zitouni/git/workspace/gr_compare_vector/lib/config.h
-stdio.h
--
-gr_count_bits.h
--
-cstdlib
--
-howto_compare_vector_cci.h
+howto_vector_source2.h
 -
 gr_io_signature.h
+-
+stdio.h
 -
 
 /usr/local/include/gnuradio/gr_basic_block.h
@@ -62,10 +58,6 @@ complex
 gruel/attributes.h
 -
 
-/usr/local/include/gnuradio/gr_count_bits.h
-gr_core_api.h
--
-
 /usr/local/include/gnuradio/gr_io_signature.h
 gr_core_api.h
 -
@@ -90,6 +82,12 @@ gr_types.h
 gr_core_api.h
 -
 boost/shared_ptr.hpp
+-
+
+/usr/local/include/gnuradio/gr_sync_block.h
+gr_core_api.h
+-
+gr_block.h
 -
 
 /usr/local/include/gnuradio/gr_tags.h

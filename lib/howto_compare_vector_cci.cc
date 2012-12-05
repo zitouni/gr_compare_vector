@@ -190,10 +190,10 @@ howto_compare_vector_cci::general_work (int noutput_items,
 			  data_received = is_same_vector(d_shift_reg, d_vector_reg);
 
 			  if (data_received){
+				  is_same_vector_number+=1;
 			      //printf("******************Data is received *************** : %d******* valeur %d\n", number_bits_data, d_shift_reg);
 			      //printf("valeur de d_shift_reg: %d \n", d_shift_reg );
 			      //printf("nombre de vecteur trouve : %d le d_iteration_data_reg is : %d \n", is_same_vector_number, d_iteration_data_reg);
-			      is_same_vector_number+=1;
 			  }else{
 				  //printf("DATA not found \n");
 				  //data_not_found++;
@@ -212,7 +212,7 @@ howto_compare_vector_cci::general_work (int noutput_items,
 		     //printf("nombre de vecteur trouve : %d le d_iteration_data_reg is : %d \n", is_same_vector_number, d_iteration_data_reg);
 			 is_same_vector_decision = true;
 			 is_same_vector_number = 0;
-			 //exit(1);
+			 exit(1);
 
 		  }
 
